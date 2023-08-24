@@ -1,5 +1,5 @@
-# test1
-AAA
+# Experimenting NLP on rock news articles
+This repository is made up of multiple NLP experiments on web rock news articles. The text corpus is comprised by 
 
 ## Installation
 

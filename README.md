@@ -7,10 +7,13 @@ This repository is made up of multiple NLP experiments on web rock news articles
 2. [Data Reading and Description](#data-reading-and-description)
 </details>
 
+## Rule-based text classification
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+<div align = "right">    
+  <a href="#Overview">(back to top)</a>
 
 
-
-## Installation
 
 Use the package manager [pip](https://pip.pypa.io/en/stable/) to install foobar.
 

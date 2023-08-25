@@ -1,5 +1,14 @@
 # Overview
-This repository is made up of multiple NLP experiments on web rock news articles. The text corpus is comprised by 
+This repository is made up of multiple NLP experiments on web rock news articles. The text corpus is comprised by 20 000 articles news retrieved from 6 rock specialized websites: Loudersound, loudwire, Ultimate Classic Rock (UCR), Kerrang!, Planet Rock and The New York Times (NYT). 
+
+<details>
+<summary>Table of Contents</summary>
+1. [Rule-based text classification](#Rule-based-text-classification)
+2. [Data Reading and Description](#data-reading-and-description)
+</details>
+
+
+
 
 ## Installation
 

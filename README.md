@@ -23,6 +23,7 @@ The purpose of this script is identifying and extracting rock artist/rock artist
 4. Bands like "Yes", "HIM", "Sweet" or "The Band" lead to misleading labelling so additional text preprocessing actions were required.
 <div align = "right">    
   <a href="#overview">(back to top)</a>
+<div align = "right">
 
 # Rule-based text classification
 ## Goals

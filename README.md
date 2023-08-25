@@ -5,7 +5,7 @@ This repository is made up of multiple NLP experiments on web rock news articles
 <summary> Table of Contents </summary>
 
 1. [Dictionary-based Named Entity Recognition](#dictionary-based-named-entity-recognition)
-2. [Rule-based text classification](##-rule-based-text-classification)
+2. [Rule-based text classification](#rule-based-text-classification)
 
 </details>
 

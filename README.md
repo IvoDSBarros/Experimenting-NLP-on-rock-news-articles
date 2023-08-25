@@ -4,7 +4,8 @@ This repository is made up of multiple NLP experiments on web rock news articles
 <details>
 <summary> Table of Contents </summary>
 
-1 [Go to Dictionary-based Named Entity Recognition](#-dictionary-based-named-entity-recognition)
+1. [Go to Dictionary-based Named Entity Recognition](#-dictionary-based-named-entity-recognition)
+2. [Go to Rule-based text classification](#-rule-based-text-classification)
 
 </details>
 
@@ -20,5 +21,20 @@ The purpose of this script is identifying and extracting rock artist/rock artist
 3. The words of the news headlines from the websites Loudwire and Ultimate Classic Rock start with capital letter.
 
 4. Bands like "Yes", "HIM", "Sweet" or "The Band" lead to misleading labelling so additional text preprocessing actions were required.
+<div align = "right">    
+  <a href="#overview">(back to top)</a>
+
+# Rule-based text classification
+## Goals
+This rule-based text classification model is intended to identify keywords and assign both topic labels and publication type categories across a text corpus comprised by rock news headlines with no labeled data. A set of pre-defined rules has been manually created for this purpose. The core of the rock news headlines' semantic landscape consists of the keywords 'album', 'single', 'song', 'show', 'tour' and 'video'. The keywords are the foundation to set up the classification logical rules and assign human-readable contextualized tags.
+
+## Challenges
+1. To ensure all semantically relevant keywords in which the set of classification rules is based on are integrated in the cleaned text corpus when performing the extraction of common nouns and verbs. A function was designed in this respect by combining the selection of the mentioned part-of-speech (POS) tags and a list of all relevant keywords. 
+
+2. Taking into account the target POS tags, it was mandatory at first to replace  the previously identified rock artists names by a unique word, "Bandname", to mitigate any disrutpion of the POS tagging tasks executed afterwards. The word "Bandname" was later removed from the text corpus. 
+
+3. With regards to text normalization techniques, stemming turned out to be the most effective to prepare the text corpus for further processing. This was particularly significant when dealing with verb tenses. Anyway, as "think" and "say" are relevant keywords and irregular verbs, its past simple form was replaced by the present simple in anticipation. 
+
+4. To ensure synonyms of relevant keywords are accurately standardized, a dictionary has been created in light of the specific semantic field these keywords show in the context of rock news. In fact, the verbs "drop", "unleash", "share", "premier" and "launch" are generally related to music releases, while "unveil" and "reveal" tend to be associated ta annoucements in most cases.
 <div align = "right">    
   <a href="#overview">(back to top)</a>

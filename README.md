@@ -3,7 +3,7 @@ This repository is made up of multiple NLP experiments on web rock news articles
 
 <details>
 <summary>Table of Contents</summary>
-[Rule-based text classification](#rule-based-text-classification)
+[Rule-based text classification](#-rule-based-text-classification)
 [Go to Real Cool Heading section](#overview)
   2. [Data Reading and Description](#data-reading-and-description)
 </details>

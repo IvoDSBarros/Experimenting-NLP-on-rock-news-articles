@@ -3,12 +3,7 @@ This repository is made up of multiple NLP experiments on web rock news articles
 
 <details>
 <summary> Table of Contents </summary>
-[hyperlink]
-
-	
- [Rule based text classification]
-	
-	](#-rule-based-text-classification)
+1. [Rule based text classification](#-rule-based-text-classification)
 </details>
 
 # Rule based text classification

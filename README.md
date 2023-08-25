@@ -3,12 +3,12 @@ This repository is made up of multiple NLP experiments on web rock news articles
 
 <details>
 <summary>Table of Contents</summary>
-1. [Rule-based text classification](#1.-rule-based-text-classification)
-[Go to Real Cool Heading section](#real-cool-heading)
+[Rule-based text classification](#rule-based-text-classification)
+[Go to Real Cool Heading section](#overview)
   2. [Data Reading and Description](#data-reading-and-description)
 </details>
 
-# 1. Rule-based text classification
+# Rule-based text classification
 Goals
 This rule-based text classification model is intended to identify keywords and assign both topic labels and publication type categories across a text corpus comprised by rock news headlines with no labeled data. A set of pre-defined rules has been manually created for this purpose. The core of the rock news headlines' semantic landscape consists of the keywords 'album', 'single', 'song', 'show', 'tour' and 'video'. The keywords are the foundation to set up the classification logical rules and assign human-readable contextualized tags.
 <div align = "right">    

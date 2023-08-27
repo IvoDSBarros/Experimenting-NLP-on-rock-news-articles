@@ -7,6 +7,8 @@ This repository is made up of multiple NLP experiments on web rock news articles
 1. [Dictionary-based Named Entity Recognition](#dictionary-based-named-entity-recognition)
 2. [Rule-based text classification](#rule-based-text-classification)
 3. [Topic modeling experiments](#topic-modeling-experiments)
+    + [LDA model using Scikit-learn](#1.-lda-model-using-scikit-learn)
+    + [LDA model using Gensim](#2.-lda-model-using-gensim)
 
 </details>
 
@@ -17,7 +19,7 @@ The purpose of this script is identifying and extracting rock artist/rock artist
 ### Challenges
 1. Single/multiple rock artist name(s) and/or single/multiple rock artist member name(s) might be mentioned in a news headline and/or news description. Hence the text of the headline and the text of the description were combined to perform the search of the rock artist and rock artist member. Additionally, only whole words/compound words should be matched to avoid wrong labelling. On the other hand, the pre-built dictianaries of rock artists/rock artists member names contain 38 663 records. Given this particular context and taking into account that the end goal is assigning lists of identified rock artist/rock artist member names per every single text of the corpus, performance has become a critical issue. Several methods were evaluated including vectorization, flashtext, regex and a whole word search approcah proposed on Stack Overflow (question 5319922, user200783). The last one, when combined with a previous text preprocessing by removing special characters and a set of rock artists/rock artists member names, has proved to be the fastest and most effective.
 
-2. Acronyms are used to mention some rock artists (A7X, RHCP, RATM, GN'R) and the definite article "The" is sometimes excluded to mention artists whose name starts with "The" (a stop word removal approach would perfectly work out for  bands like The Beatles or The Rolling Stones but it is not the case for bands such as The Who - it would be completely removed as "The" and "Who" are both  stop words - or The Doors - "Doors" would be matching both The Doors and Three Doors Down news articles afterwards). Moreover, popular songs or albums are often mentioned with no reference to the rock artist across the headlines and the descriptions. Some misspellings were identified on the rock artist names through the headlines.            
+2. Acronyms are used to mention some rock artists (A7X, RHCP, RATM, GN'R) and the definite article "The" is sometimes excluded to mention artists whose name starts with "The" (a stop word removal approach would perfectly work out for  bands like The Beatles or The Rolling Stones but it is not the case for bands such as The Who - it would be completely removed as "The" and "Who" are both  stop words - or The Doors - "Doors" would be matching both The Doors and Three Doors Down news articles afterwards). Moreover, popular songs or albums are often mentioned with no reference to the rock artist across the headlines and the descriptions. Some misspellings were identified on the rock artist names through the headlines.
 
 3. The words of the news headlines from the websites Loudwire and Ultimate Classic Rock start with capital letter.
 
@@ -46,9 +48,11 @@ This rule-based text classification model is intended to identify keywords and a
 
 ## Topic modeling experiments
 ### Goals
-Along with the rule-based text classification model, we conducted an unsupervised machine learning method for topic modeling, specifically, the Latent Dirichlet Allocation (LDA). Two models have been developed using the Python's libraries **(1) scikit-learn** and **(2) gensim**.
+Along with the rule-based text classification model, we conducted an unsupervised machine learning method for topic modeling, specifically, the Latent Dirichlet Allocation (LDA). Two models have been developed using the Python's libraries **(1) Scikit-learn** and **(2) Gensim**.
 
-### Challenges
+#### 1. LDA model using Scikit-learn 
+
+##### Challenges
 1. The text preprocessing challenges have already been detailed in the previous chapter.
 
 2. The hyperparameter optimization of the LDA model, namely the parameters n_components and learning_decay, has been done through the the grid search method.
@@ -57,9 +61,7 @@ Along with the rule-based text classification model, we conducted an unsupervise
 
 4. The results obtained through the frequency–inverse document frequency (TF–IDF) were not the expected. Despite its main purpose of scaling down the impact of predominant tokens, the interpretability of topics was not as coherent and comprehensible as raw frequencies of occurence.
 
-### Results
-Results
-
+##### Results
 LDA evaluation model metrics in sklearn
 
 Perplexity and likelihood score are conventional performance metrics available in the sklearn library to diagnose a LDA model. According to the available literature, the lower the perplexity, the better the model. On the contrary, a higher likelihood score is indicative of a better fit. However, there's no pre-defined threshold that make clear what is a lower preplexity score or a higher likelihood score. Based on the work of Blei, D. et al. (2003), a perplexity < 2200 might be acceptable. It is noteworthy that a study conducted by Chang J. et al. (2009) suggested no relationship between preplexity andhuman interpretation.
@@ -75,6 +77,9 @@ To get a visual overview of the lda model, we used the Python library pyLDAvis b
         #3 topic: album announcement;
         #4 topic: song release;
         #5 topic: live performance.
+
+#### 2. LDA model using Gensim 
+This project is a Capstone Project done as part of Unsupervised Machine Learning. A set of 2225 BBC News Articles are analysed to identify the underlying themes and topics within them.
 
 <div align = "right">    
   <a href="#overview">(back to top)</a>

@@ -52,7 +52,7 @@ Along with the rule-based text classification model, we conducted an unsupervise
 
 #### 1. LDA model using Scikit-learn 
 
-##### Challenges
+#### Challenges
 + The text preprocessing challenges have already been detailed in the previous chapter.
 
 + The hyperparameter optimization of the LDA model, namely the parameters n_components and learning_decay, has been done through the the grid search method.
@@ -61,7 +61,7 @@ Along with the rule-based text classification model, we conducted an unsupervise
 
 + The results obtained through the frequency–inverse document frequency (TF–IDF) were not the expected. Despite its main purpose of scaling down the impact of predominant tokens, the interpretability of topics was not as coherent and comprehensible as raw frequencies of occurence.
 
-##### Results
+#### Results
 **LDA evaluation model metrics in sklearn** <br>
 Perplexity and likelihood score are conventional performance metrics available in the sklearn library to diagnose a LDA model. According to the available literature, the lower the perplexity, the better the model. On the contrary, a higher likelihood score is indicative of a better fit. However, there's no pre-defined threshold that make clear what is a lower preplexity score or a higher likelihood score. Based on the work of Blei, D. et al. (2003), a perplexity < 2200 might be acceptable. It is noteworthy that a study conducted by Chang J. et al. (2009) suggested no relationship between preplexity andhuman interpretation.
 

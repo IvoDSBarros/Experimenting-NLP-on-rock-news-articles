@@ -34,13 +34,13 @@ The purpose of this script is identifying and extracting rock artist/rock artist
 This rule-based text classification model is intended to identify keywords and assign both topic labels and publication type categories across a text corpus comprised by rock news headlines with no labeled data. A set of pre-defined rules has been manually created for this purpose. The core of the rock news headlines' semantic landscape consists of the keywords 'album', 'single', 'song', 'show', 'tour' and 'video'. The keywords are the foundation to set up the classification logical rules and assign human-readable contextualized tags.
 
 ### Challenges
-1. To ensure all semantically relevant keywords in which the set of classification rules is based on are integrated in the cleaned text corpus when performing the extraction of common nouns and verbs. A function was designed in this respect by combining the selection of the mentioned part-of-speech (POS) tags and a list of all relevant keywords. 
++ To ensure all semantically relevant keywords in which the set of classification rules is based on are integrated in the cleaned text corpus when performing the extraction of common nouns and verbs. A function was designed in this respect by combining the selection of the mentioned part-of-speech (POS) tags and a list of all relevant keywords. 
 
-2. Taking into account the target POS tags, it was mandatory at first to replace  the previously identified rock artists names by a unique word, "Bandname", to mitigate any disrutpion of the POS tagging tasks executed afterwards. The word "Bandname" was later removed from the text corpus. 
++ Taking into account the target POS tags, it was mandatory at first to replace  the previously identified rock artists names by a unique word, "Bandname", to mitigate any disrutpion of the POS tagging tasks executed afterwards. The word "Bandname" was later removed from the text corpus. 
 
-3. With regards to text normalization techniques, stemming turned out to be the most effective to prepare the text corpus for further processing. This was particularly significant when dealing with verb tenses. Anyway, as "think" and "say" are relevant keywords and irregular verbs, its past simple form was replaced by the present simple in anticipation. 
++ With regards to text normalization techniques, stemming turned out to be the most effective to prepare the text corpus for further processing. This was particularly significant when dealing with verb tenses. Anyway, as "think" and "say" are relevant keywords and irregular verbs, its past simple form was replaced by the present simple in anticipation. 
 
-4. To ensure synonyms of relevant keywords are accurately standardized, a dictionary has been created in light of the specific semantic field these keywords show in the context of rock news. In fact, the verbs "drop", "unleash", "share", "premier" and "launch" are generally related to music releases, while "unveil" and "reveal" tend to be associated ta annoucements in most cases.
++ To ensure synonyms of relevant keywords are accurately standardized, a dictionary has been created in light of the specific semantic field these keywords show in the context of rock news. In fact, the verbs "drop", "unleash", "share", "premier" and "launch" are generally related to music releases, while "unveil" and "reveal" tend to be associated ta annoucements in most cases.
 
 <div align = "right">    
   <a href="#overview">(back to top)</a>
@@ -53,13 +53,13 @@ Along with the rule-based text classification model, we conducted an unsupervise
 #### 1. LDA model using Scikit-learn 
 
 ##### Challenges
-1. The text preprocessing challenges have already been detailed in the previous chapter.
++ The text preprocessing challenges have already been detailed in the previous chapter.
 
-2. The hyperparameter optimization of the LDA model, namely the parameters n_components and learning_decay, has been done through the the grid search method.
++ The hyperparameter optimization of the LDA model, namely the parameters n_components and learning_decay, has been done through the the grid search method.
 
-3. As the LDA algorithm is stochastic and the output is different every run, to ensure the reproducibility of the scikit-learn LDA model the random state parameter has been set to 0. 
++ As the LDA algorithm is stochastic and the output is different every run, to ensure the reproducibility of the scikit-learn LDA model the random state parameter has been set to 0. 
 
-4. The results obtained through the frequency–inverse document frequency (TF–IDF) were not the expected. Despite its main purpose of scaling down the impact of predominant tokens, the interpretability of topics was not as coherent and comprehensible as raw frequencies of occurence.
++ The results obtained through the frequency–inverse document frequency (TF–IDF) were not the expected. Despite its main purpose of scaling down the impact of predominant tokens, the interpretability of topics was not as coherent and comprehensible as raw frequencies of occurence.
 
 ##### Results
 LDA evaluation model metrics in sklearn
@@ -72,11 +72,11 @@ Likelihood score = -107795.7
 Interactive topic model visualization with pyLDAvis
 
 To get a visual overview of the lda model, we used the Python library pyLDAvis based on the R package LDAvis developed by Sivert C. & Shirley K. (2014). In agreement with the authors, the left panel of the visualization is intended to clarify both the prevalence of each topic of the model and the interconnection between topics. Being that said, the left-hand side chart showed 5 big bubbles distributed along the quadrants and further away from each oither. Such a visual representation is symptomatic of a good model. Actually, the topics generated by the LDA model portray the previously mentioned semantic landscape of the rock news headlines: 
-        #1 topic: single and video releases; 
-        #2 topic: tour announcement;
-        #3 topic: album announcement;
-        #4 topic: song release;
-        #5 topic: live performance.
+       + #1 topic: single and video releases; 
+       + #2 topic: tour announcement;
+       + #3 topic: album announcement;
+       + #4 topic: song release;
+       + #5 topic: live performance.
 
 #### 2. LDA model using Gensim 
 This project is a Capstone Project done as part of Unsupervised Machine Learning. A set of 2225 BBC News Articles are analysed to identify the underlying themes and topics within them.

@@ -78,7 +78,11 @@ To get a visual overview of the lda model, we used the Python library pyLDAvis b
 + Topic 5: live performance.
 
 #### 2. LDA model using Gensim 
-This project is a Capstone Project done as part of Unsupervised Machine Learning. A set of 2225 BBC News Articles are analysed to identify the underlying themes and topics within them.
+In order to to overcome the instability of both sklearn and gensim lda/ldamulticore approaches, a Gensim Ensemble has been implemented.
+
+#### Challenges
++ The text preprocessing challenges have already been detailed in the Rule-based text classification chapter.
+
 
 <div align = "right">    
   <a href="#overview">(back to top)</a>

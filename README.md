@@ -14,7 +14,7 @@ This repository contains multiple NLP experiments on web rock news articles. The
 
 ## Dictionary-based Named Entity Recognition
 ### Goals
-The purpose of this model is identifying and extracting rock artist/rock artist member names from the headlines and descriptions of the abive-mentionded text corpus. With this end in view a custom dictionary-based named entity recognition (NER) approach has been implemented. The pre-built dictionary is made up of data from multiple wikipedia lists on rock, metal and punk bands gathered by a web scraper.
+The purpose of this model is identifying and extracting rock artist/rock artist member names from the headlines and descriptions of the above-mentionded text corpus. With this end in view a custom dictionary-based named entity recognition (NER) approach has been implemented. The pre-built dictionary is made up of data from multiple wikipedia lists on rock, metal and punk bands gathered by a web scraper.
 
 ### Challenges
 + Single/multiple rock artist name(s) and/or single/multiple rock artist member name(s) might be mentioned in a news headline and/or news description. Hence the text of the headline and the text of the description were combined to perform the search of the rock artist and rock artist member. Additionally, only whole words/compound words should be matched to avoid wrong labelling. On the other hand, the pre-built dictianaries of rock artists/rock artists member names contain 38 663 records. Given this particular context and taking into account that the end goal is assigning lists of identified rock artist/rock artist member names per every single text of the corpus, performance has become a critical issue. Several methods were evaluated including vectorization, flashtext, regex and a whole word search approcah proposed on Stack Overflow (question 5319922, user200783). The last one, when combined with a previous text preprocessing by removing special characters and a set of rock artists/rock artists member names, has proved to be the fastest and most effective.
@@ -31,12 +31,12 @@ The purpose of this model is identifying and extracting rock artist/rock artist 
 
 ## Rule-based text classification
 ### Goals
-This rule-based text classification model is intended to identify keywords and assign both topic labels and publication type categories across a text corpus comprised by rock news headlines with no labeled data. A set of pre-defined rules has been manually created for this purpose. The core of the rock news headlines' semantic landscape consists of the keywords 'album', 'single', 'song', 'show', 'tour' and 'video'. The keywords are the foundation to set up the classification logical rules and assign human-readable contextualized tags.
+This rule-based text classification model is intended to identify keywords and assign both topic labels and publication type categories across the no labeled rock news headlines. A set of pre-defined rules has been manually created for this purpose. The core of the rock news headlines' semantic landscape consists of the keywords 'album', 'single', 'song', 'show', 'tour' and 'video'. The keywords are the foundation to set up the classification logical rules and assign human-readable contextualized tags.
 
 ### Challenges
 + To ensure all semantically relevant keywords in which the set of classification rules is based on are integrated in the cleaned text corpus when performing the extraction of common nouns and verbs. A function was designed in this respect by combining the selection of the mentioned part-of-speech (POS) tags and a list of all relevant keywords. 
 
-+ Taking into account the target POS tags, it was mandatory at first to replace  the previously identified rock artists names by a unique word, "Bandname", to mitigate any disrutpion of the POS tagging tasks executed afterwards. The word "Bandname" was later removed from the text corpus. 
++ Taking into account the target POS tags, it was mandatory at first to replace the previously identified rock artists names by a unique word, "Bandname", to mitigate any disrutpion of the POS tagging tasks executed afterwards. The word "Bandname" was later removed from the text corpus. 
 
 + With regards to text normalization techniques, stemming turned out to be the most effective to prepare the text corpus for further processing. This was particularly significant when dealing with verb tenses. Anyway, as "think" and "say" are relevant keywords and irregular verbs, its past simple form was replaced by the present simple in anticipation. 
 
@@ -48,14 +48,14 @@ This rule-based text classification model is intended to identify keywords and a
 
 ## Topic modeling experiments
 ### Goals
-Along with the rule-based text classification model, we conducted an unsupervised machine learning method for topic modeling, specifically, the Latent Dirichlet Allocation (LDA). Two models have been developed using the Python's libraries **(1) Scikit-learn** and **(2) Gensim**.
+Along with the rule-based text classification model, an unsupervised machine learning method for topic modeling, specifically, the Latent Dirichlet Allocation (LDA) has been conducted. Two models have been developed using the Python's libraries **(1) Scikit-learn** and **(2) Gensim**.
 
 #### 1. LDA model using Scikit-learn 
 
 #### Challenges
-+ The text preprocessing challenges have already been detailed in the previous chapter.
++ The text preprocessing challenges have already been detailed in the Rule-based text classification chapter.
 
-+ The hyperparameter optimization of the LDA model, namely the parameters n_components and learning_decay, has been done through the the grid search method.
++ The hyperparameter optimization of the LDA model, namely the parameters n_components and learning_decay, has been done through the grid search method.
 
 + As the LDA algorithm is stochastic and the output is different every run, to ensure the reproducibility of the scikit-learn LDA model the random state parameter has been set to 0. 
 
@@ -65,15 +65,16 @@ Along with the rule-based text classification model, we conducted an unsupervise
 **LDA evaluation model metrics in Scikit-learn** <br>
 Perplexity and likelihood score are conventional performance metrics available in the Scikit-learn library to diagnose a LDA model. According to the available literature, the lower the perplexity, the better the model. On the contrary, a higher likelihood score is indicative of a better fit. However, there's no pre-defined threshold that make clear what is a lower preplexity score or a higher likelihood score. Based on the work of Blei, D. et al. (2003), a perplexity < 2200 might be acceptable. It is noteworthy that a study conducted by Chang J. et al. (2009) suggested no relationship between preplexity and human interpretation.
 
-+ **Perplexity** = 730.4
-+ **Likelihood score** = -107795.7
++ **Perplexity** = 704.1
++ **Likelihood score** = -106841.7
 
 **Interactive topic model visualization with pyLDAvis** <br>
-To get a visual overview of the lda model, we used the Python library pyLDAvis based on the R package LDAvis developed by Sivert C. & Shirley K. (2014). In agreement with the authors, the left panel of the visualization is intended to clarify both the prevalence of each topic of the model and the interconnection between topics. Being that said, the left-hand side chart showed 5 big bubbles distributed along the quadrants and further away from each oither. Such a visual representation is symptomatic of a good model. Actually, the topics generated by the LDA model portray the previously mentioned semantic landscape of the rock news headlines: 
-+ Topic 1: single and video releases; 
-+ Topic 2: tour announcement;
-+ Topic 3: album announcement;
-+ Topic 4: song release;
+To get a visual overview of the lda model, we used the Python library pyLDAvis based on the R package LDAvis developed by Sivert C. & Shirley K. (2014). In agreement with the authors, the left panel of the visualization is intended to clarify both the prevalence of each topic of the model and the interconnection between topics. Being that said, the left-hand side chart showed 6 big bubbles distributed along the quadrants and further away from each oither. Such a visual representation is symptomatic of a good model. Actually, the topics generated by the LDA model portray, in some extent, the previously mentioned semantic landscape of the rock news headlines: 
++ Topic 0: tour announcement; 
++ Topic 1: show and festival announcements;
++ Topic 2: video release;
++ Topic 3: album and song releases;
++ Topic 4: expressing one's opinion/reaction;
 + Topic 5: live performance.
 
 #### 2. LDA model using Gensim 

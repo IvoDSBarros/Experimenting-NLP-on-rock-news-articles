@@ -73,8 +73,7 @@ To get a visual overview of the lda model, we used the Python library pyLDAvis b
 + Topic 2: video release;
 + Topic 3: album and song releases;
 + Topic 4: expressing one's opinion/reaction;
-+ Topic 5: live performance.
-
++ Topic 5: live performance. <br><br>
 
 #### 2. LDA model using Gensim 
 In order to to overcome the instability of both sklearn and gensim lda/ldamulticore approaches, a Gensim Ensemble has been implemented.

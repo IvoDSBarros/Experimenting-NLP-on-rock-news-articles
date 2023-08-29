@@ -48,7 +48,7 @@ This rule-based text classification model is intended to identify keywords and a
 
 ## Topic modeling experiments
 ### Goals
-Along with the rule-based text classification model, an unsupervised machine learning method for topic modeling, specifically, the Latent Dirichlet Allocation (LDA) has been conducted. Two models have been developed using the Python's libraries **(1) Scikit-learn** and **(2) Gensim**. The text preprocessing challenges have already been detailed in the Rule-based text classification chapter.
+Along with the rule-based text classification model, an unsupervised machine learning method for topic modeling, specifically, the Latent Dirichlet Allocation (LDA) has been conducted. Two models have been developed using the Python's libraries **(1) Scikit-learn** and **(2) Gensim**. The text preprocessing methodological options have already been detailed in the Rule-based text classification chapter.
 
 #### 1. LDA model using Scikit-learn 
 

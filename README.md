@@ -80,6 +80,10 @@ Display html page
 
 http://htmlpreview.github.io/?https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/output/sklearn_train_lda_model_viz.html
 
+http://htmlpreview.github.io/?https://github.com/twbs/bootstrap/blob/gh-pages/2.3.2/index.html
+
+
+
 file:///C:/Users/HP/Desktop/Python/Projects/github_rock_news_nlp/output/lda_viz/sklearn_train_lda_model_viz.html
 
 Experimenting-NLP-on-rock-news-articles/output/sklearn_train_lda_model_viz.html

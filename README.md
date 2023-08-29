@@ -78,7 +78,9 @@ To get a visual overview of the lda model, we used the Python library pyLDAvis b
 Display html page
 (https://stackoverflow.com/questions/8446218/how-to-see-an-html-page-on-github-as-a-normal-rendered-html-page-to-see-preview)
 
-http://htmlpreview.github.io/?https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/output/sklearn_train_lda_model_viz.html
+```html
+github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/output/sklearn_train_lda_model_viz.html
+'''
 
 http://htmlpreview.github.io/?https://github.com/twbs/bootstrap/blob/gh-pages/2.3.2/index.html
 

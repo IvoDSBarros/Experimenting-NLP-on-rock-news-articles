@@ -81,6 +81,8 @@ Display html page
 http://htmlpreview.github.io/?
 file:///C:/Users/HP/Desktop/Python/Projects/github_rock_news_nlp/output/lda_viz/sklearn_train_lda_model_viz.html
 
+sklearn_train_lda_model_viz.html
+
 #### 2. LDA model using Gensim 
 In order to to overcome the instability of both sklearn and gensim lda/ldamulticore approaches, a Gensim Ensemble has been implemented.
 

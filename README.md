@@ -76,9 +76,11 @@ To get a visual overview of the lda model, we used the Python library pyLDAvis b
 + Topic 5: live performance.
 
 Display html page
-(https://stackoverflow.com/questions/8446218/how-to-see-an-html-page-on-github-as-a-normal-rendered-html-page-to-see-preview)
+https://stackoverflow.com/questions/8446218/how-to-see-an-html-page-on-github-as-a-normal-rendered-html-page-to-see-preview
+https://tylerthetech.com/how-to-view-html-on-github/
 
-https://htmlpreview.github.io/?https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/output/sklearn_train_lda_model_viz/index.html
+test
+https://raw.githack.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/main/output/lda_viz/sklearn_train_lda_model_viz.html
 
 #### 2. LDA model using Gensim 
 In order to to overcome the instability of both sklearn and gensim lda/ldamulticore approaches, a Gensim Ensemble has been implemented.

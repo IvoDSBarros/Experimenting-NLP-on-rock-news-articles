@@ -12,6 +12,11 @@ This repository contains multiple NLP experiments on web rock news articles. The
 
 </details>
 
+![My Image](images/Metallica_The_Monster_Still_Lives_Infographic.png)
+Metallica_The_Monster_Still_Lives_Infographic.png
+
+
+
 ## Dictionary-based Named Entity Recognition
 ### Goals
 The purpose of this model is identifying and extracting rock artist/rock artist member names from the headlines and descriptions of the above-mentionded text corpus. With this end in view a custom dictionary-based named entity recognition (NER) approach has been implemented. The pre-built dictionary is made up of data from multiple wikipedia lists on rock, metal and punk bands gathered by a web scraper.

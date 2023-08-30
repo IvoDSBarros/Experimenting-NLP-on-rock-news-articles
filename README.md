@@ -48,17 +48,18 @@ This rule-based text classification model is intended to identify keywords and a
 
 ## Topic modeling experiments
 ### Goals
-Along with the rule-based text classification model, an unsupervised machine learning method for topic modeling, specifically, the Latent Dirichlet Allocation (LDA) has been conducted. Two models have been developed using the Python's libraries **(1) Scikit-learn** and **(2) Gensim**. The text preprocessing methodological options have already been detailed in the Rule-based text classification chapter.
-
-#### 1. LDA model using Scikit-learn 
+Along with the rule-based text classification model, an unsupervised machine learning method for topic modeling, specifically, the Latent Dirichlet Allocation (LDA) has been conducted. Two models have been developed using the Python's libraries **(1) Scikit-learn** and **(2) Gensim**. The text preprocessing methodological choices have already been detailed in the Rule-based text classification chapter.
 
 #### Challenges
-+ The hyperparameter optimization of the LDA model, namely the parameters n_components and learning_decay, has been done through the grid search method.
++ As the LDA algorithm is stochastic and the output is different every run, to ensure the reproducibility of the Scikit-learn and Gensim LDA models the random state parameter has been set to 0. 
 
-+ As the LDA algorithm is stochastic and the output is different every run, to ensure the reproducibility of the scikit-learn LDA model the random state parameter has been set to 0. 
++ The results obtained through the frequency–inverse document frequency (TF–IDF) were not the expected for both models. Despite its main purpose of scaling down the impact of predominant tokens, the interpretability of topics was not as coherent and comprehensible as raw frequencies of occurence.
 
-+ The results obtained through the frequency–inverse document frequency (TF–IDF) were not the expected. Despite its main purpose of scaling down the impact of predominant tokens, the interpretability of topics was not as coherent and comprehensible as raw frequencies of occurence.
++ The hyperparameter optimization of the Scikit-learn LDA model, namely the parameters n_components and learning_decay, has been done through the grid search method.
 
++ In order to to overcome the instability of the sklearn and gensim lda/ldamulticore approaches, a Gensim Ensemble has been implemented.
+
+#### 1. LDA model using Scikit-learn 
 #### Results
 **LDA evaluation model metrics in Scikit-learn** <br>
 Perplexity and likelihood score are conventional performance metrics available in the Scikit-learn library to diagnose a LDA model. According to the available literature, the lower the perplexity, the better the model. On the contrary, a higher likelihood score is indicative of a better fit. However, there's no pre-defined threshold that make clear what is a lower preplexity score or a higher likelihood score. Based on the work of Blei, D. et al. (2003), a perplexity < 2200 might be acceptable. It is noteworthy that a study conducted by Chang J. et al. (2009) suggested no relationship between preplexity and human interpretation.
@@ -76,10 +77,12 @@ To get a visual overview of the lda model, we used the Python library pyLDAvis b
 + Topic 5: live performance. <br><br>
 
 #### 2. LDA model using Gensim 
-In order to to overcome the instability of both sklearn and gensim lda/ldamulticore approaches, a Gensim Ensemble has been implemented.
+#### Results
+**LDA evaluation model metrics in Gensim** <br>
+Perplexity and likelihood score are conventional performance metrics available in the Scikit-learn library to diagnose a LDA model. According to the available literature, the lower the perplexity, the better the model. On the contrary, a higher likelihood score is indicative of a better fit. However, there's no pre-defined threshold that make clear what is a lower preplexity score or a higher likelihood score. Based on the work of Blei, D. et al. (2003), a perplexity < 2200 might be acceptable. It is noteworthy that a study conducted by Chang J. et al. (2009) suggested no relationship between preplexity and human interpretation.
 
-#### Challenges
-+ The text preprocessing challenges have already been detailed in the Rule-based text classification chapter.
++ **Perplexity** = 704.1
++ **Likelihood score** = -106841.7
 
 
 <div align = "right">    

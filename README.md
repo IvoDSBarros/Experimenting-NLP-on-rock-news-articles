@@ -15,7 +15,7 @@ This repository contains multiple NLP experiments on web rock news articles. The
 TEst
 ![My Image]([https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/tree/main/output/lda_viz)/Metallica_The_Monster_Still_Lives_Infographic.png](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/1e2933be6523aa55cf425b61685b56772da8b91e/output/lda_viz/Metallica_The_Monster_Still_Lives_Infographic.png))
 
-[Metallica: The Monster Still Lives Infographic](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/1e2933be6523aa55cf425b61685b56772da8b91e/output/lda_viz/Metallica_The_Monster_Still_Lives_Infographic.png)
+[Metallica: The Monster Still Lives Infographic](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/1e2933be6523aa55cf425b61685b56772da8b91e/output/lda_viz/Metallica_The_Monster_Still_Lives_Infographic.png?raw=true)
 
 
 ## Dictionary-based Named Entity Recognition

@@ -12,7 +12,9 @@ This repository contains multiple NLP experiments on web rock news articles. The
 
 </details>
 
-![My Image](images/Metallica_The_Monster_Still_Lives_Infographic.png)
+TEst
+![My Image]([images>>](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/tree/main/output/lda_viz)/Metallica_The_Monster_Still_Lives_Infographic.png)
+
 Metallica_The_Monster_Still_Lives_Infographic.png
 
 

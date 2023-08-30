@@ -12,7 +12,8 @@ This repository contains multiple NLP experiments on web rock news articles. The
 
 </details>
 
-**Metallica infographic based on the text corpus**
+**Infographic based on the text corpus**
+
 <br>
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/1e2933be6523aa55cf425b61685b56772da8b91e/output/lda_viz/Metallica_The_Monster_Still_Lives_Infographic.png)
 

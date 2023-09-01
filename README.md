@@ -83,14 +83,13 @@ To get a visual overview of the lda model, we used the Python library pyLDAvis b
 + Topic 5: live performance. <br><br>
 
 #### 2. LDA model using Gensim
-Replicability and instability are two major issues of topic modeling. The Ensemble LDA method aims to mitigate these issues by *"finding and generating stable topics from the results of multiple topic models"* and remove topics *"that are noise and are not reproducible"* (Rehurek, 2022).
-
-Ensemble LDA addresses the issue by training an ensemble of topic models and throwing out topics that do not reoccur across the ensemble.
-In this regard, the topics extracted are more reliable and there is the added benefit over many topic models that the user does not need to know the exact number of topics ahead of time.
+Replicability and instability are two major issues of topic modeling. The Ensemble LDA method aims to mitigate these issues by *"finding and generating stable topics from the results of multiple topic models"* and remove topics *"that are noise and are not reproducible"* (Rehurek, 2022). On the top of that, there is no *"need to know the exact number of topics ahead of time"* (Ibidem).
 
 #### Results
 WIP
 
++ **Perplexity** = 704.1
++ **Likelihood score** = -106841.7
 
 <div align = "right">    
   <a href="#overview">(back to top)</a>

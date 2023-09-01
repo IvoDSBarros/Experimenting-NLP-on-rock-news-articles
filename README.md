@@ -63,7 +63,7 @@ Along with the rule-based text classification model, an unsupervised machine lea
 
 + The hyperparameter optimization of the Scikit-learn LDA model, namely the parameters n_components and learning_decay, has been done through the grid search method.
 
-+ In order to to overcome the instability of the sklearn and gensim lda/ldamulticore approaches, a Gensim Ensemble has been implemented.
++ In order to to overcome the instability and non-reproducibility of the sklearn and gensim lda/ldamulticore approaches, a Gensim Ensemble LDA has been implemented.
 
 #### 1. LDA model using Scikit-learn 
 #### Results
@@ -83,7 +83,7 @@ To get a visual overview of the lda model, we used the Python library pyLDAvis b
 + Topic 5: live performance. <br><br>
 
 #### 2. LDA model using Gensim
-Replicability and instability are two major issues of topic modeling. The Ensemble LDA method aims to overcome these issues by *finding and generating stable topics from the results of multiple topic models" and remove topics "that are noise and are not reproducible* (Rehurek, 2022).
+Replicability and instability are two major issues of topic modeling. The Ensemble LDA method aims to mitigate these issues by *"finding and generating stable topics from the results of multiple topic models"* and remove topics *"that are noise and are not reproducible"* (Rehurek, 2022).
 
 Ensemble LDA addresses the issue by training an ensemble of topic models and throwing out topics that do not reoccur across the ensemble.
 In this regard, the topics extracted are more reliable and there is the added benefit over many topic models that the user does not need to know the exact number of topics ahead of time.

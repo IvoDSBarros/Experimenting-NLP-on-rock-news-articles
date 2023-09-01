@@ -87,9 +87,10 @@ Replicability and instability are two major issues of topic modeling. The Ensemb
 
 #### Results
 **LDA evaluation model metrics in Gensim** <br>
+C_umass is based on document cooccurrence counts, a one-preceding segmentation and a logarithmic conditional probability as confirmation measure.  <br>
 
-+ **Perplexity** = 704.1
-+ **Likelihood score** = -106841.7
++ **Perplexity** = -8.17 
++ **Umass coherence score** = -12.29 
 
 <div align = "right">    
   <a href="#overview">(back to top)</a>

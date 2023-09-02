@@ -86,7 +86,7 @@ To get a visual overview of the lda model, we used the Python library pyLDAvis b
 Replicability and instability are two major issues of topic modeling. The Ensemble LDA method aims to mitigate these issues by *"finding and generating stable topics from the results of multiple topic models"* and remove topics *"that are noise and are not reproducible"* (Rehurek, 2022). On the top of that, there is no *"need to know the exact number of topics ahead of time"* (Ibidem).
 
 #### Results
-The Emsemble LDA we performed returned 8 topics that, in some extent, the previously mentioned semantic landscape of the rock news headlines
+The Emsemble LDA we performed returned 8 topics that, once again, represent the semantic landscape of the rock news headlines:
 + Topic 0: video and single releases; 
 + Topic 1: tour announcement;
 + Topic 2: album announcement;
@@ -101,6 +101,15 @@ C_umass is based on document cooccurrence counts, a one-preceding segmentation a
 
 + **Perplexity** = -8.17 
 + **Umass coherence score** = -12.29 
+
+<div align = "right">    
+  <a href="#overview">(back to top)</a>
+</div>
+
+## References 
++ aaaaaaaaaaaaaaaaaaaaaaaa
++ bbbbbbbbbbbbbbbbbbbbbbbb
++ cccccccccccccccccccccccc
 
 <div align = "right">    
   <a href="#overview">(back to top)</a>

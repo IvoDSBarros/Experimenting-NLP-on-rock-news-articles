@@ -84,7 +84,7 @@ To get a visual overview of the lda model, we used the Python library pyLDAvis b
 + Topic 5: live performance. <br><br>
 
 #### 2. LDA model using Gensim
-Replicability and instability are two major issues of topic modeling. The Ensemble LDA method aims to mitigate these issues by *"finding and generating stable topics from the results of multiple topic models"* and remove topics *"that are noise and are not reproducible"* (Rehurek, 2022). On the top of that, there is no *"need to know the exact number of topics ahead of time"* (Ibidem).
+Replicability and instability are two major issues of topic modeling. The Ensemble LDA method aims to mitigate these issues by *"finding and generating stable topics from the results of multiple topic models"* and remove topics *"that are noise and are not reproducible"* (Řehůřek, 2022b). On the top of that, there is no *"need to know the exact number of topics ahead of time"* (Řehůřek, 2022a).
 
 #### Results
 The Ensemble LDA we performed returned 8 topics that, once again, represent the semantic landscape of the rock news headlines:
@@ -98,7 +98,7 @@ The Ensemble LDA we performed returned 8 topics that, once again, represent the 
 + Topic 7: expressing one's opinion/reaction. <br><br>
 
 **LDA evaluation model metrics in Gensim** <br>
-The ultimate goal of topic modelling is lighting on the *"set of topics that represent the global structure of a corpus of documents"* (Rehurek, 2022). Within this context, *"a set of statements or facts is said to be coherent, if they support each other"* (Röder, M. et al., 2015). 
+The ultimate goal of topic modelling is lighting on the *"set of topics that represent the global structure of a corpus of documents"* (Řehůřek, 2022a). Within this context, *"a set of statements or facts is said to be coherent, if they support each other"* (Röder, M. et al., 2015). 
 
 C_umass is based on document cooccurrence counts, a one-preceding segmentation and a logarithmic conditional probability as confirmation measure.  <br>
 
@@ -109,11 +109,11 @@ C_umass is based on document cooccurrence counts, a one-preceding segmentation a
   <a href="#overview">(back to top)</a>
 </div>
 
-## References 
+## References
++ Blei, D., Ng, A., Jordan, M. (2003) Latent Dirichlet Allocation. Journal of Machine Learning Research, 3, 993-1022.
++ [Řehůřek, R. (2022a) models.ensembelda – Ensemble Latent Dirichlet Allocation. https://radimrehurek.com/gensim/models/ensemblelda.html](https://radimrehurek.com/gensim/models/ensemblelda.html)
++ [Řehůřek, R. (2022b) Ensemble LDA. https://radimrehurek.com/gensim/auto_examples/tutorials/run_ensemblelda.html](https://radimrehurek.com/gensim/auto_examples/tutorials/run_ensemblelda.html)
 + [Röder, M., Both, A., Hinneburg, A. (2015, February). Exploring the Space of Topic Coherence Measures. WSDM '15: Proceedings of the Eighth ACM International Conference on Web Search and Data Mining, 399–408. https://doi.org/10.1145/2684822.2685324](http://svn.aksw.org/papers/2015/WSDM_Topic_Evaluation/public.pdf)
-+ [Řehůřek, R. (2022) models.ensembelda – Ensemble Latent Dirichlet Allocation. https://radimrehurek.com/gensim/models/ensemblelda.html](https://radimrehurek.com/gensim/models/ensemblelda.html)
-+ test
-
 
 <div align = "right">    
   <a href="#overview">(back to top)</a>

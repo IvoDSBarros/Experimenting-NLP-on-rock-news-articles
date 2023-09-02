@@ -100,6 +100,14 @@ The Ensemble LDA we performed returned 8 topics that, once again, represent the 
 **LDA evaluation model metrics in Gensim** <br>
 The ultimate goal of topic modelling is defining the *"set of topics that represent the global structure of a corpus of documents"* (Řehůřek, 2022a). Within this context, *"a set of statements or facts is said to be coherent, if they support each other"* (Röder et al., 2015). To evaluate the Ensemble LDA model we used Perplexity and the U-Mass coherence score, as the C_V metric is not recommended *"when it is used for randomly generated word sets"* (Roeder, 2018).
 
+https://www.baeldung.com/cs/topic-modeling-coherence-score
+https://stackoverflow.com/questions/40524768/perplexity-comparision-issue-in-sklearn-lda-vs-gensim-lda?rq=4
+https://github.com/RaRe-Technologies/gensim/issues/457
+https://mimno.infosci.cornell.edu/papers/mimno-semantic-emnlp.pdf
+https://www.os3.nl/_media/2017-2018/courses/rp2/p76_report.pdf
+https://groups.google.com/g/gensim/c/CsscFah0Ax8?pli=1
+https://stackoverflow.com/questions/62032372/coherence-score-u-mass-18-is-good-or-bad
+
 U_Mass is based on document cooccurrence counts, a one-preceding segmentation and a logarithmic conditional probability as confirmation measure.  <br>
 
 + **Perplexity** = -8.17 

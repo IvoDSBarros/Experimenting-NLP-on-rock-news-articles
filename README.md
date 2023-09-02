@@ -9,6 +9,7 @@ This repository contains multiple NLP experiments on web rock news articles. The
 3. [Topic modeling experiments](#topic-modeling-experiments)
     + [LDA model using Scikit-learn](#1-lda-model-using-scikit-learn)
     + [LDA model using Gensim](#2-lda-model-using-gensim)
+4. [References](#references)
 
 </details>
 

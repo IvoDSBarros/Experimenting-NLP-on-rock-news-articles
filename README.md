@@ -98,7 +98,7 @@ The Ensemble LDA we performed returned 8 topics that, once again, represent the 
 + Topic 7: expressing one's opinion/reaction. <br><br>
 
 **LDA evaluation model metrics in Gensim** <br>
-The ultimate goal of topic modelling is lighting on the *"set of topics that represent the global structure of a corpus of documents"* (Řehůřek, 2022a). Within this context, *"a set of statements or facts is said to be coherent, if they support each other"* (Röder, M. et al., 2015). 
+The ultimate goal of topic modelling is defining the *"set of topics that represent the global structure of a corpus of documents"* (Řehůřek, 2022a). Within this context, *"a set of statements or facts is said to be coherent, if they support each other"* (Röder, M. et al., 2015). 
 
 C_umass is based on document cooccurrence counts, a one-preceding segmentation and a logarithmic conditional probability as confirmation measure.  <br>
 

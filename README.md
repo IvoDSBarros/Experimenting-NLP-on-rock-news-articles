@@ -102,6 +102,13 @@ The ultimate goal of topic modelling is defining the *"set of topics that repres
 
  The summation of UMass coherence accounts for the ordering among the top words of a topic.2 Word probabilities are estimated based on document frequencies of the original documents used for learning the topics. (Röder et al., 2015)
 
+
+coherence as the humans’ semantic appreciation of a topic represented by its N top words (Trenquier, H. (2018))
+
+If u_mass closer to value 0 means perfect coherence and it fluctuates either side of value 0 depends upon the number of topics chosen and kind of d
+
+
+https://www.os3.nl/_media/2017-2018/courses/rp2/p76_report.pdf
 https://www.baeldung.com/cs/topic-modeling-coherence-score
 https://stackoverflow.com/questions/40524768/perplexity-comparision-issue-in-sklearn-lda-vs-gensim-lda?rq=4
 https://github.com/RaRe-Technologies/gensim/issues/457
@@ -127,6 +134,7 @@ U_Mass is based on document cooccurrence counts, a one-preceding segmentation an
 + [Roeder, M., Both, A., Hinneburg, A. (2015, February). Exploring the Space of Topic Coherence Measures. WSDM '15: Proceedings of the Eighth ACM International Conference on Web Search and Data Mining, 399–408. https://doi.org/10.1145/2684822.2685324](http://svn.aksw.org/papers/2015/WSDM_Topic_Evaluation/public.pdf)
 + [Roeder, M. (2018) Not being able to replicate coherence scores from paper #13](https://github.com/dice-group/Palmetto/issues/13)
 + [Sievert, C., Shirley, K. (2014, June) LDAvis: A method for visualizing and interpreting topic. Proceedings of the Workshop on Interactive Language Learning, Visualization, and Interfaces, 63–70.](https://nlp.stanford.edu/events/illvi2014/papers/sievert-illvi2014.pdf) 
++ [Trenquier, H. (2018) Improving Semantic Quality of Topic Models for Forensic Investigations]
 
 <div align = "right">    
   <a href="#overview">(back to top)</a>

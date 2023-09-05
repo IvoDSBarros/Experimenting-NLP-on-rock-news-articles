@@ -100,7 +100,7 @@ The Ensemble LDA we performed returned 8 topics that, once again, represent the 
 **LDA evaluation model metrics in Gensim** <br>
 The ultimate goal of topic modelling is defining the *"set of topics that represent the global structure of a corpus of documents"* (Řehůřek, 2022a). Within this context, *"a set of statements or facts is said to be coherent, if they support each other"* (Röder et al., 2015). To evaluate the Ensemble LDA model we used the U-Mass coherence score, as the C_V metric is not recommended *"when it is used for randomly generated word sets"* (Roeder, 2018), and Perplexity.
 
-The UMass coherence score relies on document frequency and takes into account order among the top words of a topic (Röder et al., 2015). It ranges bvetween -14 and 14 reaches its peak at 0.
+The UMass coherence score relies on document frequency and takes into account order among the top words of a topic (Röder et al., 2015). It ranges bvetween -14 and 14 and reaches its peak at 0.
 
  The summation of UMass coherence accounts for the ordering among the top words of a topic.2 Word probabilities are estimated based on document frequencies of the original documents used for learning the topics. (Röder et al., 2015)
 

@@ -98,28 +98,7 @@ The Ensemble LDA we performed returned 8 topics that, once again, represent the 
 + Topic 7: expressing one's opinion/reaction. <br><br>
 
 **LDA evaluation model metrics in Gensim** <br>
-The ultimate goal of topic modelling is defining the *"set of topics that represent the global structure of a corpus of documents"* (Řehůřek, 2022a). Within this context, *"a set of statements or facts is said to be coherent, if they support each other"* (Röder et al., 2015). To evaluate the Ensemble LDA model we used the U-Mass coherence score, as the C_V metric is not recommended *"when it is used for randomly generated word sets"* (Roeder, 2018), and Perplexity.
-
-The UMass coherence score relies on document frequency and takes into account order among the top words of a topic (Röder et al., 2015). It ranges bvetween -14 and 14 and reaches its peak at 0.
-
- The summation of UMass coherence accounts for the ordering among the top words of a topic.2 Word probabilities are estimated based on document frequencies of the original documents used for learning the topics. (Röder et al., 2015)
-
-
-coherence as the humans’ semantic appreciation of a topic represented by its N top words (Trenquier, H. (2018))
-
-If u_mass closer to value 0 means perfect coherence and it fluctuates either side of value 0 depends upon the number of topics chosen and kind of d
-
-
-https://www.os3.nl/_media/2017-2018/courses/rp2/p76_report.pdf
-https://www.baeldung.com/cs/topic-modeling-coherence-score
-https://stackoverflow.com/questions/40524768/perplexity-comparision-issue-in-sklearn-lda-vs-gensim-lda?rq=4
-https://github.com/RaRe-Technologies/gensim/issues/457
-https://mimno.infosci.cornell.edu/papers/mimno-semantic-emnlp.pdf
-https://www.os3.nl/_media/2017-2018/courses/rp2/p76_report.pdf
-https://groups.google.com/g/gensim/c/CsscFah0Ax8?pli=1
-https://stackoverflow.com/questions/62032372/coherence-score-u-mass-18-is-good-or-bad
-
-U_Mass is based on document cooccurrence counts, a one-preceding segmentation and a logarithmic conditional probability as confirmation measure.  <br>
+To evaluate the Ensemble LDA model we used the UMass Coherence score and Perplexity. Within the topic modelling context, *"a set of statements or facts is said to be coherent, if they support each other"* (Röder et al., 2015). In simple terms, coherence is the *"humans’ semantic appreciation of a topic represented by its N top words"* (Trenquier, 2018). The UMass coherence score relies on document frequency and takes into account order among the top words of a topic (Röder et al., 2015). It ranges bvetween -14 and 14 and reaches its peak at 0. The UMass has been chosen instead of C_V metric as the last one is not recommended *"when it is used for randomly generated word sets"* (Roeder, 2018). We get a UMass score of -12.29 which indicates topics are not perfectly coherent, however when it comes to human interpretation it was by far the best model obtained through LDA Ensemble.
 
 + **Perplexity** = -8.17 
 + **Umass coherence score** = -12.29 

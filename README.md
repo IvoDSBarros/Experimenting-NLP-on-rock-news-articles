@@ -1,5 +1,5 @@
 # Overview
-This repository contains multiple NLP experiments on web rock news articles. The text corpus is comprised by 20 000 rock news headlines and descriptions with no labeled data (for demonstration purposes, a random subset of 2000 articles has been made available in this repository). The data was retrieved from 6 specialized rock websites: Loudersound, loudwire, Ultimate Classic Rock (UCR), Kerrang!, Planet Rock and The New York Times (NYT).
+This repository contains multiple NLP experiments on web rock news articles. The text corpus is comprised by 20 000 rock news headlines and descriptions with no labeled data (for demonstration purposes, a random subset of 2 000 articles has been made available in this repository). The data was retrieved from 6 specialized rock websites: Loudersound, loudwire, Ultimate Classic Rock (UCR), Kerrang!, Planet Rock and The New York Times (NYT).
 
 <details>
 <summary> Table of Contents </summary>

@@ -16,7 +16,7 @@ This repository contains multiple NLP experiments on web rock news articles. The
 **Metallica: the monster still lives**
 <br>Infographic based on the text corpus
 
-![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/1e2933be6523aa55cf425b61685b56772da8b91e/output/lda_viz/Metallica_The_Monster_Still_Lives_Infographic.png)
+![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/bbd96d23028682b430b1a392bc1e343436d3deff/output/visuals/metallica_the_monster_still_lives_infographic.png)
 
 
 ## Dictionary-based Named Entity Recognition

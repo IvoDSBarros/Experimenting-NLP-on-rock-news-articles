@@ -33,7 +33,7 @@ The purpose of this model is identifying and extracting rock artist/rock artist 
 + Bands like "Yes", "HIM", "Sweet" or "The Band" lead to misleading labelling so additional text preprocessing actions were required.
 <br>
 
-**Top 50 rock artists & rock artist members** 
+**Top 50 rock artists and rock artist members** 
 
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/218a43ba49a6d31de3ecff0857b81c21add582cb/output/visuals/dict_based_ner_viz.png)
 

@@ -35,7 +35,7 @@ The purpose of this model is identifying and extracting rock artist/rock artist 
 **Metallica: the monster still lives**
 <br>Infographic based on the text corpus
 
-![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/bbd96d23028682b430b1a392bc1e343436d3deff/output/visuals/metallica_the_monster_still_lives_infographic.png)
+![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/4d0669a1e2574b058fd399ef811856b46bc298fc/output/visuals/viz_dict_based_ner.png)
 
 <div align = "right">    
   <a href="#overview">(back to top)</a>

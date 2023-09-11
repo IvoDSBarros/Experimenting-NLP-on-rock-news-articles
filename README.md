@@ -32,6 +32,11 @@ The purpose of this model is identifying and extracting rock artist/rock artist 
 
 + Bands like "Yes", "HIM", "Sweet" or "The Band" lead to misleading labelling so additional text preprocessing actions were required.
 
+**Metallica: the monster still lives**
+<br>Infographic based on the text corpus
+
+![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/bbd96d23028682b430b1a392bc1e343436d3deff/output/visuals/metallica_the_monster_still_lives_infographic.png)
+
 <div align = "right">    
   <a href="#overview">(back to top)</a>
 </div>

@@ -35,7 +35,7 @@ The purpose of this model is identifying and extracting rock artist/rock artist 
 
 **Word clouds on the most popular rock artists and rock artist members** 
 
-![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/4d0669a1e2574b058fd399ef811856b46bc298fc/output/visuals/viz_dict_based_ner.png)
+![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/98d60d1f03514b13aa0368abc4e908d73e46e93e/output/visuals/viz_dict_based_ner_new.png)
 
 <div align = "right">    
   <a href="#overview">(back to top)</a>

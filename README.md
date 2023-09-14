@@ -53,6 +53,12 @@ This rule-based text classification model is intended to identify keywords and a
 + With regards to text normalization techniques, stemming turned out to be the most effective to prepare the text corpus for further processing. This was particularly significant when dealing with verb tenses. Anyway, as "think" and "say" are relevant keywords and irregular verbs, its past simple form was replaced by the present simple in anticipation. 
 
 + To ensure synonyms of relevant keywords are accurately standardized, a dictionary has been created in light of the specific semantic field these keywords show in the context of rock news. In fact, the verbs "drop", "unleash", "share", "premier" and "launch" are generally related to music releases, while "unveil" and "reveal" tend to be associated ta annoucements in most cases.
+<br>
+
+**Alluvial diagram on the rock news articles** 
+
+![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/fa27c7b7629f2295fd9afe5c02a94af3abab32a8/output/visuals/rule_based_text_%20class_viz.png)
+
 
 <div align = "right">    
   <a href="#overview">(back to top)</a>

@@ -85,7 +85,7 @@ Perplexity and likelihood score are conventional performance metrics available i
 + **Perplexity** =  682.3
 + **Likelihood score** = -105182.4
 
-**Perplexity and Likelihood score by #topics**
+**Perplexity and Likelihood score by number of topics**
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/38e5a92cefb5455a58aee58bedde8096c9b7b033/output/visuals/lda_sklearn_assessment.png)
 
 

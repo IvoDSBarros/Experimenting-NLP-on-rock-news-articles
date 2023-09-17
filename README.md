@@ -117,7 +117,7 @@ To evaluate the Ensemble LDA model we used the UMass Coherence score and Perplex
 With regards to Perplexity (formula: 2^(-bound)), its value is once again tolerable.
 
 + **Perplexity** = -8.17 
-+ **Umass coherence score** = -12.29 
++ **Umass coherence score** = -12.29 (doublecheck the value)
 
 **Manual rule-based text classification Vs. Unsupervised Machine Learning Classification**
 <br>The alluvial diagram below is based on 200 unseen texts.

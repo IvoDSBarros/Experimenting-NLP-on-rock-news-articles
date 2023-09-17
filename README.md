@@ -57,7 +57,7 @@ This rule-based text classification model is intended to identify keywords and a
 
 **Alluvial diagram on the rock news articles** 
 
-![]()
+![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/9c8c49fd0a9cb2c7673c1ebf615fa2912af6e914/output/visuals/rule_based_text_%20class_viz.png)
 
 
 <div align = "right">    

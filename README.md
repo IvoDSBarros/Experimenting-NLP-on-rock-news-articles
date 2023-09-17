@@ -35,7 +35,7 @@ The purpose of this model is identifying and extracting rock artist/rock artist 
 
 **Top 50 rock artists and rock artist members** 
 
-![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/218a43ba49a6d31de3ecff0857b81c21add582cb/output/visuals/dict_based_ner_viz.png)
+![]()
 
 <div align = "right">    
   <a href="#overview">(back to top)</a>

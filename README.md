@@ -1,5 +1,5 @@
 # Overview
-This repository contains multiple NLP experiments on web rock news articles. The text corpus is comprised by 20 000 rock news headlines and descriptions with no labeled data (for demonstration purposes, a random subset of 2 000 articles has been made available in this repository). The data was retrieved from 6 specialized rock websites: Loudersound, loudwire, Ultimate Classic Rock (UCR), Kerrang!, Planet Rock and The New York Times (NYT).
+This repository contains multiple NLP experiments on web rock news articles. The text corpus is comprised by 20,000 rock news headlines and descriptions with no labeled data (for demonstration purposes, a random subset of 2,000 articles has been made available in this repository). The data was retrieved from 6 specialized rock websites: Loudersound, loudwire, Ultimate Classic Rock (UCR), Kerrang!, Planet Rock and The New York Times (NYT).
 
 <details>
 <summary> Table of Contents </summary>
@@ -66,7 +66,7 @@ This rule-based text classification model is intended to identify keywords and a
 
 ## Topic modeling experiments
 ### Goals
-Along with the rule-based text classification model, an unsupervised machine learning method for topic modeling has been conducted, specifically, the Latent Dirichlet Allocation (LDA). Two models have been developed using the Python's libraries **(1) Scikit-learn** and **(2) Gensim**. The text preprocessing methodological choices have already been detailed in the Rule-based text classification chapter.
+Along with the rule-based text classification model, an unsupervised machine learning method for topic modeling has been conducted, specifically, the Latent Dirichlet Allocation (LDA). Two models have been developed using the Python's libraries **(1) Scikit-learn** and **(2) Gensim**. Both models have been trained on 18,200 news articles. The text preprocessing methodological choices have already been detailed in the Rule-based text classification chapter.
 
 #### Challenges
 + As the LDA algorithm is stochastic and the output is different every run, to ensure the reproducibility of the Scikit-learn and Gensim LDA models the random state parameter has been set to 0. 
@@ -83,7 +83,7 @@ Along with the rule-based text classification model, an unsupervised machine lea
 Perplexity and likelihood score are conventional performance metrics available in the Scikit-learn library to diagnose a LDA model. According to the available literature, the lower the perplexity, the better the model. On the contrary, a higher likelihood score is indicative of a better fit. However, there's no pre-defined threshold that make clear what is a lower preplexity score or a higher likelihood score. Based on the work of Blei, D. et al. (2003), a perplexity < 2200 might be acceptable. It is noteworthy that a study conducted by Chang J. et al. (2009) suggested no relationship between perplexity and human interpretation.
 
 + **Perplexity** =  682.3
-+ **Likelihood score** = -105182.4
++ **Likelihood score** = -105,182.4
 
 **Perplexity and Likelihood score by number of topics**
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/38e5a92cefb5455a58aee58bedde8096c9b7b033/output/visuals/lda_sklearn_assessment.png)

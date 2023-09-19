@@ -112,7 +112,7 @@ The Ensemble LDA we performed returned 8 topics that, once again, represent the 
 + Topic 6: artist death related;
 + Topic 7: expressing one's opinion/reaction. <br><br>
 
-**Word clouds on the Gensim Ensemble LDA topics: top 10 words per topic**
+**Top 10 words per topic**
 
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/c626527e88c8b979687dd2aba373ace1de7b020c/output/visuals/gensim_topics_words_top_10.png)
 

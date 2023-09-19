@@ -114,7 +114,7 @@ The Ensemble LDA we performed returned 8 topics that, once again, represent the 
 
 **Word clouds on the Gensim Ensemble LDA topics: top 10 words per topic**
 
-![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/284110dfe8e56a00d80c3bd3dfd8bf1167d72115/output/visuals/gensim_topics_words_top_10.png)
+![]()
 
 **LDA evaluation model metrics in Gensim** <br>
 To evaluate the Ensemble LDA model we used the UMass Coherence score and Perplexity. Within the topic modelling context, *"a set of statements or facts is said to be coherent, if they support each other"* (Röder et al., 2015). In simple terms, coherence is the *"humans’ semantic appreciation of a topic represented by its N top words"* (Trenquier, 2018). The UMass coherence score relies on document frequency and takes into account order among the top words of a topic (Röder et al., 2015). It ranges bvetween -14 and 14 and reaches its peak at 0. The UMass has been chosen instead of C_V metric as the last one is not recommended *"when it is used for randomly generated word sets"* (Roeder, 2018). We get a UMass score of -12.29 which indicates topics are not perfectly coherent, however when it comes to human interpretation it was by far the best model obtained through LDA Ensemble.
@@ -125,7 +125,8 @@ With regards to Perplexity (formula: 2^(-bound)), its value is once again tolera
 
 **Manual rule-based text classification Vs. Unsupervised Machine Learning Classification**
 <br>The alluvial diagram below is based on 200 unseen texts.
-<br>Sklearn and Gensim LDA Topics<40% have been categorized as "multi-category".   
+<br>Sklearn and Gensim LDA Topics<40% have been categorized as "multi-category".
+
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/d025b4a19598851abdf7df424d158134ff659b9f/output/visuals/rule_based_vs_%20ml_lda.png)
 
 <div align = "right">    

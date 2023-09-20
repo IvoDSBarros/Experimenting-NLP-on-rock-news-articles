@@ -125,7 +125,7 @@ With regards to Perplexity (formula: 2^(-bound)), its value is once again tolera
 
 **Manual rule-based text classification Vs. Unsupervised Machine Learning Classification**
 <br>The alluvial diagram below is based on 200 unseen texts.
-<br>Sklearn and Gensim LDA Topics<40% have been categorized as "multi-category".
+<br>Sklearn and Gensim LDA main topics <40% have been categorized as "multi-category".
 
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/d025b4a19598851abdf7df424d158134ff659b9f/output/visuals/rule_based_vs_%20ml_lda.png)
 

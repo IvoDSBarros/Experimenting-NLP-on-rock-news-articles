@@ -82,7 +82,7 @@ Along with the rule-based text classification model, an unsupervised machine lea
 **LDA evaluation model metrics in Scikit-learn** <br>
 Perplexity and likelihood score are conventional performance metrics available in the Scikit-learn library to diagnose a LDA model. These statistiscal measures evaluate the predictive accuracy of a model on unseen texts. According to the available literature, the lower the perplexity, the better the model. On the contrary, a higher likelihood score is indicative of a better fit. However, there's no pre-defined threshold that make clear what is a lower preplexity score or a higher likelihood score. Based on the work of Blei, D. et al. (2003), the perplexity goes in the opposite direction of the number of topics meaning that the first tends to decrease when the second increases. It is noteworthy that a study conducted by Chang J. et al. (2009) suggested no relationship between perplexity and human interpretation.
 
-**Perplexity and Likelihood score by number of topics in the held-out test set**
+**Perplexity and Likelihood score by number of topics in the test set**
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/38e5a92cefb5455a58aee58bedde8096c9b7b033/output/visuals/lda_sklearn_assessment.png)
 
 + **Perplexity** =  682.3
@@ -124,10 +124,10 @@ With regards to Perplexity (formula: 2^(-bound)), its value is once again tolera
 + **Umass coherence score** = -12.29 (doublecheck the value)
 
 **Manual rule-based text classification Vs. Unsupervised Machine Learning Classification**
-<br>The alluvial diagram below is based on 200 unseen texts.
+<br>The alluvial diagram below is based on the test set of 2000 unseen texts.
 <br>Sklearn and Gensim LDA main topics <40% have been categorized as "multi-category".
 
-![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/d025b4a19598851abdf7df424d158134ff659b9f/output/visuals/rule_based_vs_%20ml_lda.png)
+![]()
 
 <div align = "right">    
   <a href="#overview">(back to top)</a>

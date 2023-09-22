@@ -102,13 +102,14 @@ To get a visual overview of the lda model, we used the Python library pyLDAvis b
 Replicability and instability are two major issues of topic modeling. The Ensemble LDA method aims to mitigate these issues by *"finding and generating stable topics from the results of multiple topic models"* and remove topics *"that are noise and are not reproducible"* (Řehůřek, 2022b). On the top of that, there is no *"need to know the exact number of topics ahead of time"* (Řehůřek, 2022a).
 
 #### Results
-The Ensemble LDA we performed returned 6 topics that, once again, represent the semantic landscape of the rock news headlines:
-+ Topic 0: video and single releases; 
-+ Topic 1: tour announcement;
-+ Topic 2: album release;
-+ Topic 3: song related;
-+ Topic 4: live performance related;
-+ Topic 5: artist death related;
+The Ensemble LDA we performed returned 7 topics that, once again, represent the semantic landscape of the rock news headlines:
++ Topic 0: tour announcement; 
++ Topic 1: live performance related;
++ Topic 2: single and video releases;
++ Topic 3: album announcement;
++ Topic 4: song related;
++ Topic 5: video and movie related;
++ Topic 6: artist death related;
 
 **Top 10 words per topic**
 

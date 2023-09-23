@@ -98,10 +98,10 @@ To get a visual overview of the lda model, the Python library “pyLDAvis” bas
 + Topic 4: video and festival. <br><br>
 
 #### 2. LDA model using Gensim
-Replicability and instability are two major issues of topic modeling. The Ensemble LDA method aims to mitigate these issues by *"finding and generating stable topics from the results of multiple topic models"* and remove topics *"that are noise and are not reproducible"* (Řehůřek, 2022b). On the top of that, there is no *"need to know the exact number of topics ahead of time"* (Řehůřek, 2022a).
+Replicability and instability are two major issues of topic modelling. The Ensemble LDA method aims to mitigate these issues by *"finding and generating stable topics from the results of multiple topic models"* and remove topics *"that are noise and are not reproducible"* (Řehůřek, 2022b). Additionally, there is no *"need to know the exact number of topics ahead of time"* (Řehůřek, 2022a).
 
 #### Results
-The Ensemble LDA we performed returned 7 topics that, once again, represent the semantic landscape of the rock news headlines:
+The Ensemble LDA returned 7 topics that, once again, represent the semantic landscape of the rock news headlines:
 + Topic 0: tour announcement; 
 + Topic 1: live performance related;
 + Topic 2: single and video releases;
@@ -110,7 +110,7 @@ The Ensemble LDA we performed returned 7 topics that, once again, represent the 
 + Topic 5: video and movie related;
 + Topic 6: artist death related;
 
-**Top 10 words per topic**
+**Top 10 words by topic**
 
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/42a6ef8d36cbf1a3f92267ffa2ba4c4f40e91316/output/visuals/gensim_topics_words_top_10.png)
 
@@ -118,12 +118,14 @@ The Ensemble LDA we performed returned 7 topics that, once again, represent the 
 To evaluate the Ensemble LDA model we used the UMass Coherence score and Perplexity. Within the topic modelling context, *"a set of statements or facts is said to be coherent, if they support each other"* (Röder et al., 2015). In simple terms, coherence is the *"humans’ semantic appreciation of a topic represented by its N top words"* (Trenquier, 2018). The UMass coherence score relies on document frequency and takes into account order among the top words of a topic (Röder et al., 2015). It ranges bvetween -14 and 14 and reaches its peak at 0. The UMass has been chosen instead of C_V metric as the last one is not recommended *"when it is used for randomly generated word sets"* (Roeder, 2018). We get a UMass score of -12.29 which indicates topics are not perfectly coherent, however when it comes to human interpretation it was by far the best model obtained through LDA Ensemble.
 With regards to Perplexity (formula: 2^(-bound)), its value is once again tolerable.
 
+A UMass Coherence score and Perplexity were used to evaluate the Ensemble LDA model. Within the topic modelling context, *"a set of statements or facts is said to be coherent, if they support each other"* (Röder et al., 2015). In simple terms, coherence is the *"humans’ semantic appreciation of a topic represented by its N top words"* (Trenquier, 2018). The UMass coherence score relies on document frequency and considers order among the top words of a topic (Röder et al., 2015). It ranges between -14 and 14 and reaches its peak at 0. The UMass was chosen over C_V metric as the latter is not recommended *"when it is used for randomly generated word sets"* (Roeder, 2018). A UMass score of -12.29 was obtained. This indicates topics are not perfectly coherent, however, when it comes to human interpretation, it was the best model obtained through LDA Ensemble. The Perplexity (formula: 2^(-bound)) value is considered acceptable.
+
 + **Perplexity** = -8.17 
-+ **Umass coherence score** = -12.29 (doublecheck the value)
++ **UMass coherence score** = -12.29 (doublecheck the value)
 
 **Manual rule-based text classification Vs. Unsupervised Machine Learning Classification**
 <br>The alluvial diagram below is based on the test set of 2000 unseen texts.
-<br>Sklearn and Gensim LDA main topics <40% have been categorized as "multi-category".
+<br>Sklearn and Gensim LDA main topics below 40% were categorized as "multi-category".
 
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/b161999e27e245a471d5afcb4fcefd7714bd1184/output/visuals/rule_based_vs_%20ml_lda.png)
 

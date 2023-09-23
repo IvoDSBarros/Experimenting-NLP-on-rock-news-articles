@@ -66,16 +66,16 @@ This rule-based text classification model is intended to identify keywords and a
 
 ## Topic modelling experiments
 ### Goals
-Along with the rule-based text classification model, an unsupervised machine learning method for topic modeling has been conducted, specifically, the Latent Dirichlet Allocation (LDA). Two models have been developed using the Python's libraries **(1) Scikit-learn** and **(2) Gensim**. Both models have been trained on 16,000 news articles. The text preprocessing methodological choices have already been detailed in the Rule-based text classification chapter.
+Along with the rule-based text classification model, an unsupervised machine learning method for topic modelling was conducted – the Latent Dirichlet Allocation (LDA). Two models were developed using the Python's libraries **(1) Scikit-learn** and **(2) Gensim**. Both models were trained on a sample of 18,000 news articles. The text preprocessing methodological choices have already been detailed in the Rule-based text classification chapter.
 
 #### Challenges
-+ As the LDA algorithm is stochastic and the output is different every run, to ensure the reproducibility of the Scikit-learn and Gensim LDA models the random state parameter has been set to 0. 
++ As the LDA algorithm is stochastic and the output is different every run, the random state parameter was set to 0 to ensure the reproducibility of the Scikit-learn and Gensim LDA models. 
 
-+ The results obtained through the frequency–inverse document frequency (TF–IDF) were not the expected for both models. Despite its main purpose of scaling down the impact of predominant tokens, the interpretability of topics was not as coherent and comprehensible as raw frequencies of occurence.
++ The results obtained through the inverse document frequency (TF–IDF) were not aligned with expectations across both models. Despite its main purpose of scaling down the impact of predominant tokens, the interpretability of topics was not as coherent and as comprehensible as frequencies of events.
 
-+ The hyperparameter optimization of the Scikit-learn LDA model, namely the parameters n_components and learning_decay, has been done through the grid search method.
++ The hyperparameter optimization of the Scikit-learn LDA model, namely the parameters "n_components" and "learning_decay", was performed using the grid search method.
 
-+ In order to to overcome the instability and non-reproducibility of the sklearn and gensim lda/ldamulticore approaches, a Gensim Ensemble LDA has been implemented.
++ A Gensim Ensemble LDA was implemented to overcome the instability and non-reproducibility of the sklearn and "gensim lda"/"ldamulticore" approaches.
 
 #### 1. LDA model using Scikit-learn 
 #### Results

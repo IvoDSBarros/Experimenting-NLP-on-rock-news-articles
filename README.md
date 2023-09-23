@@ -6,7 +6,7 @@ This repository contains multiple NLP experiments on web rock-based news article
 
 1. [Dictionary-based Named Entity Recognition](#dictionary-based-named-entity-recognition)
 2. [Rule-based text classification](#rule-based-text-classification)
-3. [Topic modeling experiments](#topic-modeling-experiments)
+3. [Topic modelling experiments](#topic-modelling-experiments)
     + [LDA model using Scikit-learn](#1-lda-model-using-scikit-learn)
     + [LDA model using Gensim](#2-lda-model-using-gensim)
 4. [References](#references)
@@ -64,7 +64,7 @@ This rule-based text classification model is intended to identify keywords and a
   <a href="#overview">(back to top)</a>
 </div>
 
-## Topic modeling experiments
+## Topic modelling experiments
 ### Goals
 Along with the rule-based text classification model, an unsupervised machine learning method for topic modeling has been conducted, specifically, the Latent Dirichlet Allocation (LDA). Two models have been developed using the Python's libraries **(1) Scikit-learn** and **(2) Gensim**. Both models have been trained on 16,000 news articles. The text preprocessing methodological choices have already been detailed in the Rule-based text classification chapter.
 

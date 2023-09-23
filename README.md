@@ -46,13 +46,13 @@ The purpose of this model is identifying and extracting rock artist/rock artist 
 This rule-based text classification model is intended to identify keywords and assign both topic labels and publication type categories across the unlabelled rock news headlines. A set of pre-defined rules was manually created for this purpose. The core keywords of the rock news headlines' semantic landscape comprise the following: 'album', 'single', 'song', 'show', 'tour' and 'video'. The keywords are the basis to derive the classification rules and to assign human-readable contextualized tags.
 
 ### Challenges
-+ To ensure all semantically relevant keywords in which the set of classification rules is based on are integrated in the cleaned text corpus when performing the extraction of common nouns and verbs. A function was designed in this respect by combining the selection of the mentioned part-of-speech (POS) tags and a list of all relevant keywords. 
++ Ensure all semantically relevant keywords, in which the set of classification rules is based on, are integrated in the cleaned text corpus when performing the extraction of common nouns and verbs. A function was designed in this respect by combining the selection of the mentioned part-of-speech (POS) tags and a list of all relevant keywords.
 
-+ Taking into account the target POS tags, it was mandatory at first to replace the previously identified rock artists names by a unique word, "Bandname", to mitigate any disrutpion of the POS tagging tasks executed afterwards. The word "Bandname" was later removed from the text corpus. 
++ Considering the target POS tags, the previously identified rock artists names were initially replaced by a unique word, "Bandname", to mitigate inaccuracies of the POS tagging activities performed at a later stage. The word "Bandname" was later removed from the text corpus.
 
-+ With regards to text normalization techniques, stemming turned out to be the most effective to prepare the text corpus for further processing. This was particularly significant when dealing with verb tenses. Anyway, as "think" and "say" are relevant keywords and irregular verbs, its past simple form was replaced by the present simple in anticipation. 
++ Stemming was the most effective text normalization technique to prepare the text corpus for further processing. This was particularly significant when dealing with verb tenses. E.g., as "think" and "say" are relevant keywords and irregular verbs, its past simple form was replaced by the present simple.
 
-+ To ensure synonyms of relevant keywords are accurately standardized, a dictionary has been created in light of the specific semantic field these keywords show in the context of rock news. In fact, the verbs "drop", "unleash", "share", "premier" and "launch" are generally related to music releases, while "unveil" and "reveal" tend to be associated ta annoucements in most cases.
++ A dictionary was created to ensure synonyms of relevant keywords are accurately standardized, considering the specific semantic field these keywords show in the context of rock news. Actually, the verbs "drop", "unleash", "share", "premier" and "launch" are generally related to music releases, whilst "unveil" and "reveal" tend to be associated to announcements in most cases.
 <br>
 
 **Alluvial diagram on the rock news articles** 

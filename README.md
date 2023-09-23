@@ -43,7 +43,7 @@ The purpose of this model is identifying and extracting rock artist/rock artist 
 
 ## Rule-based text classification
 ### Goals
-This rule-based text classification model is intended to identify keywords and assign both topic labels and publication type categories across the unlabelled rock news headlines. A set of pre-defined rules was manually created for this purpose. The core keywords of the rock news headlines' semantic landscape comprise the following: 'album', 'single', 'song', 'show', 'tour' and 'video'. The keywords are the basis to derive the classification rules and to assign human-readable contextualized tags.
+This rule-based text classification model is intended to identify keywords and assign both topic labels and publication type categories across the unlabelled rock news headlines. A set of pre-defined rules was manually created for this purpose. The core keywords of the rock news headlines' semantic landscape comprise the following: "album", "single", "song', "show", "tour" and "video". The keywords are the basis to derive the classification rules and to assign human-readable contextualized tags.
 
 ### Challenges
 + Ensure all semantically relevant keywords, in which the set of classification rules is based on, are integrated in the cleaned text corpus when performing the extraction of common nouns and verbs. A function was designed in this respect by combining the selection of the mentioned part-of-speech (POS) tags and a list of all relevant keywords.

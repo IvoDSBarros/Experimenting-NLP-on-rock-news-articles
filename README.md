@@ -38,7 +38,7 @@ The purpose of this model is identifying and extracting rock artist/rock artist 
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/79f97e3178c6c49564fc5677b22d771efe11d92a/output/visuals/dict_based_ner_viz.png)
 
 **A closer look at the identified rock artist and rock artist members** 
-<br>The tables below are based on a stratified random sample of 10 news articles.
+<br>The tables below are based on a stratified random sample of 10 news articles (website is the stratifying field).
 <br>The headline and the description were combined to perform the extraction of the named entities.
 
 **Headline**
@@ -70,7 +70,7 @@ This rule-based text classification model is intended to identify keywords and a
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/9bcac112f107897702938baf1c492eaa6a415e86/output/visuals/rule_based_text_%20class_viz.png)
 
 **Generated keywords, topic labels and publication type categories**
-<br>Table based on a stratified random sample of 10 news articles.<br>
+<br>Table based on a stratified random sample of 10 news articles (website is the stratifying field).<br>
 
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/85e406f6d05b12ca78c396988f8e8a857a41ac5a/output/visuals/rule_based_text_%20class_table_random_sample.png)
 

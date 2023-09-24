@@ -42,7 +42,7 @@ The purpose of this model is identifying and extracting rock artist/rock artist 
 <br>The headline and the description were combined to perform the extraction of the named entities.
 
 **Headline**
-![]()
+![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/524502072d36b8896053982493b8644e2ddedf6a/output/visuals/dict_based_ner_table_headline_random_sample.png)
 
 **Description**
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/33f0947a16453ec32df5bb3427f66aa98da51f40/output/visuals/dict_based_ner_table_desc_random_sample.png)

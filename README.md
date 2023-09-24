@@ -39,7 +39,7 @@ The purpose of this model is identifying and extracting rock artist/rock artist 
 
 **Rock artist and rock artist members tags by article news** 
 
-![]()
+![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/860b768673bf09acf48f774c7e4a09c0a28fb01f/output/visuals/dict_based_ner_table_title_random_sample.png)
 
 <div align = "right">    
   <a href="#overview">(back to top)</a>

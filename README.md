@@ -69,6 +69,9 @@ This rule-based text classification model is intended to identify keywords and a
 
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/9bcac112f107897702938baf1c492eaa6a415e86/output/visuals/rule_based_text_%20class_viz.png)
 
+**Rule-based text classification**
+
+![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/85e406f6d05b12ca78c396988f8e8a857a41ac5a/output/visuals/rule_based_text_%20class_table_random_sample.png)
 
 <div align = "right">    
   <a href="#overview">(back to top)</a>

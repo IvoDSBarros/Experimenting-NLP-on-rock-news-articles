@@ -37,9 +37,16 @@ The purpose of this model is identifying and extracting rock artist/rock artist 
 
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/79f97e3178c6c49564fc5677b22d771efe11d92a/output/visuals/dict_based_ner_viz.png)
 
-**Rock artist and rock artist members tags by article news** 
+**A closer look on identified rock artist and rock artist members: headline** 
+The table below is based on a random sample of 10 news articles.
+The headline and the text of the description were combined to perform the extraction of the named entities.
 
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/860b768673bf09acf48f774c7e4a09c0a28fb01f/output/visuals/dict_based_ner_table_title_random_sample.png)
+
+**Rock artist and rock artist members tags by article news: description** 
+
+![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/f898b16fa6929bec7878165366fe685e204e73ea/output/visuals/dict_based_ner_table_desc_random_sample.png=
+
 
 <div align = "right">    
   <a href="#overview">(back to top)</a>

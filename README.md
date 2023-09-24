@@ -72,7 +72,7 @@ This rule-based text classification model is intended to identify keywords and a
 **Generated keywords, topic labels and publication type categories**
 <br>Table based on a stratified random sample of 10 news articles (website is the stratifying field).<br>
 
-![]()
+![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/cdb6d6cda20ae72dce165c23ddc2103f9ba65ca8/output/visuals/rule_based_text_%20class_table_random_sample.png)
 
 <div align = "right">    
   <a href="#overview">(back to top)</a>

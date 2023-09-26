@@ -38,7 +38,7 @@ The purpose of this model is identifying and extracting rock artist/rock artist 
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/79f97e3178c6c49564fc5677b22d771efe11d92a/output/visuals/dict_based_ner_viz.png)
 
 **A closer look at the identified rock artist and rock artist members** 
-<br>All tables displayed in this repo are based on stratified random samples of 10 news articles (website is the stratifying field).
+<br>All tables presented in this repository are based on stratified random samples of 10 news articles (website is the stratifying field).
 <br>The headline and the description were combined to perform the extraction of the named entities.
 
 **Headline**

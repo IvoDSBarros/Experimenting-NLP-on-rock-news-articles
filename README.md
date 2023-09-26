@@ -138,7 +138,7 @@ A UMass Coherence score and Perplexity were used to evaluate the Ensemble LDA mo
 <br>The alluvial diagram below is based on the test set of 2000 unseen texts.
 <br>Sklearn and Gensim LDA main topics below 40% were categorized as "multi-category".
 
-![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/b161999e27e245a471d5afcb4fcefd7714bd1184/output/visuals/rule_based_vs_%20ml_lda.png)
+![]()
 
 <div align = "right">    
   <a href="#overview">(back to top)</a>

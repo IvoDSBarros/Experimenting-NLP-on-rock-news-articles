@@ -72,7 +72,7 @@ This rule-based text classification model is intended to identify keywords and a
 **Generated keywords, topic labels and publication type categories**
 <br>
 
-![]()
+![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/688f332b4bdc57869a5054f0fbfbcdbcc60f7691/output/visuals/rule_based_text_%20class_table_random_sample.png)
 
 <div align = "right">    
   <a href="#overview">(back to top)</a>

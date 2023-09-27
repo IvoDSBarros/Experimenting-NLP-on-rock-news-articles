@@ -42,10 +42,10 @@ The purpose of this model is identifying and extracting rock artist/rock artist 
 <br>The headline and the description were combined to perform the extraction of the named entities.
 
 **Headline**
-![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/524502072d36b8896053982493b8644e2ddedf6a/output/visuals/dict_based_ner_table_headline_random_sample.png)
+![]()
 
 **Description**
-![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/33f0947a16453ec32df5bb3427f66aa98da51f40/output/visuals/dict_based_ner_table_desc_random_sample.png)
+![]()
 
 <div align = "right">    
   <a href="#overview">(back to top)</a>
@@ -72,7 +72,7 @@ This rule-based text classification model is intended to identify keywords and a
 **Generated keywords, topic labels and publication type categories**
 <br>
 
-![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/cdb6d6cda20ae72dce165c23ddc2103f9ba65ca8/output/visuals/rule_based_text_%20class_table_random_sample.png)
+![]()
 
 <div align = "right">    
   <a href="#overview">(back to top)</a>

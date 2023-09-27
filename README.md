@@ -111,6 +111,11 @@ To get a visual overview of the lda model, the Python library “pyLDAvis” bas
 + Topic 3: miscellaneous;
 + Topic 4: video and festival. <br><br>
 
+**Topics by news article**
+
+![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/6c30984f56efb720c592076a061e8d602610c927/output/visuals/lda_sklearn_topics_by_text_random_sample.png)
+
+
 #### 2. LDA model using Gensim
 Replicability and instability are two major issues of topic modelling. The Ensemble LDA method aims to mitigate these issues by *"finding and generating stable topics from the results of multiple topic models"* and remove topics *"that are noise and are not reproducible"* (Řehůřek, 2022b). Additionally, there is no *"need to know the exact number of topics ahead of time"* (Řehůřek, 2022a).
 

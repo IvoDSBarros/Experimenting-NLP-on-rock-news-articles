@@ -45,7 +45,7 @@ The purpose of this model is identifying and extracting rock artist/rock artist 
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/c6979f1778cee7f11e7b0b91642c6a70625b2099/output/visuals/dict_based_ner_table_headline_random_sample.png)
 
 **Description**
-![]()
+![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/ac9abff682ffb2410b6e73d5a3be7df75eaf5229/output/visuals/dict_based_ner_table_desc_random_sample.png)
 
 <div align = "right">    
   <a href="#overview">(back to top)</a>

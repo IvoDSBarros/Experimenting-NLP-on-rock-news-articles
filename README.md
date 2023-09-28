@@ -81,7 +81,7 @@ This rule-based text classification model is intended to identify keywords and a
 
 ## Topic modelling experiments
 ### Goals
-Along with the rule-based text classification model, an unsupervised machine learning method for topic modelling was conducted – the Latent Dirichlet Allocation (LDA). Two models were developed using the Python's libraries **(1) Scikit-learn** and **(2) Gensim**. Both models were trained on a sample of 18,000 news articles. The text preprocessing methodological choices have already been detailed in the Rule-based text classification chapter.
+Along with the rule-based text classification model, an unsupervised machine learning method for topic modelling was conducted – the Latent Dirichlet Allocation (LDA). Two models were developed using the Python's libraries **(1) Scikit-learn** and **(2) Gensim**. A stratified 80/20 split-sample validation was implemented using the website as stratifying field. The text preprocessing methodological choices have already been detailed in the Rule-based text classification chapter.
 
 #### Challenges
 + As the LDA algorithm is stochastic and the output is different every run, the random state parameter was set to 0 to ensure the reproducibility of the Scikit-learn and Gensim LDA models. 
@@ -112,7 +112,7 @@ To get a visual overview of the lda model, the Python library “pyLDAvis” bas
 + Topic 3: miscellaneous;
 + Topic 4: video and festival. <br><br>
 
-**Topic relevance by headline**
+**Topic relevance by headline in the test set**
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/6c30984f56efb720c592076a061e8d602610c927/output/visuals/lda_sklearn_topics_by_text_random_sample.png)
 
 

@@ -110,10 +110,8 @@ To get a visual overview of the lda model, the Python library “pyLDAvis” bas
 + Topic 2: live performance and song related;
 + Topic 3: miscellaneous;
 + Topic 4: video and festival. <br><br>
-<br>
 
-**Topics by news article**
-
+**Topic relevance by headline**
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/6c30984f56efb720c592076a061e8d602610c927/output/visuals/lda_sklearn_topics_by_text_random_sample.png)
 
 
@@ -131,11 +129,9 @@ The Ensemble LDA returned 7 topics that, once again, represent the semantic land
 + Topic 6: artist death related;
 
 **Top 10 words by topic**
-
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/42a6ef8d36cbf1a3f92267ffa2ba4c4f40e91316/output/visuals/gensim_topics_words_top_10.png)
-
-**Topics by news article**
-
+<br>
+**Topic relevance by headline**
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/dbf4f756fc1b6188b3ee99876191b8b1a2b07f7f/output/visuals/lda_gensim_topics_by_text_random_sample.png)
 
 **LDA evaluation model metrics in Gensim** <br>

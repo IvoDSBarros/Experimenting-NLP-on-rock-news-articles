@@ -129,6 +129,7 @@ The Ensemble LDA returned 7 topics that, once again, represent the semantic land
 + Topic 5: video and movie related;
 + Topic 6: artist death related;
 
+<br>
 
 **Top 10 words by topic**
 

@@ -70,6 +70,7 @@ This rule-based text classification model is intended to identify keywords and a
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/9bcac112f107897702938baf1c492eaa6a415e86/output/visuals/rule_based_text_%20class_viz.png)
 
 <br>
+
 **Generated keywords, topic labels and publication type categories by headline**
 
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/688f332b4bdc57869a5054f0fbfbcdbcc60f7691/output/visuals/rule_based_text_%20class_table_random_sample.png)
@@ -130,7 +131,9 @@ The Ensemble LDA returned 7 topics that, once again, represent the semantic land
 
 **Top 10 words by topic**
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/42a6ef8d36cbf1a3f92267ffa2ba4c4f40e91316/output/visuals/gensim_topics_words_top_10.png)
+
 <br>
+
 **Topic relevance by headline**
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/dbf4f756fc1b6188b3ee99876191b8b1a2b07f7f/output/visuals/lda_gensim_topics_by_text_random_sample.png)
 

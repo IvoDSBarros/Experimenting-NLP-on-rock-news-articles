@@ -68,6 +68,7 @@ This rule-based text classification model is intended to identify keywords and a
 **Alluvial diagram on the rock news articles** 
 
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/9bcac112f107897702938baf1c492eaa6a415e86/output/visuals/rule_based_text_%20class_viz.png)
+
 <br>
 **Generated keywords, topic labels and publication type categories by headline**
 

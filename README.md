@@ -69,7 +69,7 @@ This rule-based text classification model is intended to identify keywords and a
 
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/9bcac112f107897702938baf1c492eaa6a415e86/output/visuals/rule_based_text_%20class_viz.png)
 
-**Generated keywords, topic labels and publication type categories**
+**Generated keywords, topic labels and publication type categories by headline**
 <br>
 
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/688f332b4bdc57869a5054f0fbfbcdbcc60f7691/output/visuals/rule_based_text_%20class_table_random_sample.png)
@@ -110,6 +110,7 @@ To get a visual overview of the lda model, the Python library “pyLDAvis” bas
 + Topic 2: live performance and song related;
 + Topic 3: miscellaneous;
 + Topic 4: video and festival. <br><br>
+<br>
 
 **Topics by news article**
 

@@ -137,7 +137,7 @@ The Ensemble LDA returned 7 topics that, once again, represent the semantic land
 
 <br>
 
-**Topic relevance by headline**
+**Topic relevance by headline in the test set**
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/dbf4f756fc1b6188b3ee99876191b8b1a2b07f7f/output/visuals/lda_gensim_topics_by_text_random_sample.png)
 
 **LDA evaluation model metrics in Gensim** <br>

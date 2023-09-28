@@ -129,6 +129,7 @@ The Ensemble LDA returned 7 topics that, once again, represent the semantic land
 + Topic 5: video and movie related;
 + Topic 6: artist death related;
 
+
 **Top 10 words by topic**
 
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/42a6ef8d36cbf1a3f92267ffa2ba4c4f40e91316/output/visuals/gensim_topics_words_top_10.png)

@@ -98,7 +98,7 @@ Along with the rule-based text classification model, an unsupervised machine lea
 Perplexity and likelihood score are conventional performance metrics available in the Scikit-learn library to diagnose a LDA model. These statistical measures evaluate the predictive accuracy of a model on unseen texts. According to the available literature, the lower the perplexity, the more accurate is the model. On the contrary, a higher likelihood score is indicative of a better fit. However, there is no pre-defined threshold that defines lower perplexity score or a higher likelihood score. Based on the work of Blei, D. et al. (2003), the perplexity goes in the opposite direction of the number of topics. This means that the former tends to decrease when the latter increases. A study conducted by Chang J. et al. (2009) suggested, however, there is no relationship between perplexity and human interpretation.
 
 **Perplexity and Likelihood score over number of topics in the test set**
-![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/e28aa5ae720ff36114c230705d0ba69558089515/output/visuals/lda_sklearn_assessment.png)
+![]()
 
 + **Perplexity** =  901.4
 + **Likelihood score** = -108,604.3

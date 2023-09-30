@@ -144,7 +144,7 @@ The Ensemble LDA returned 7 topics that, once again, represent the semantic land
 A UMass Coherence score and Perplexity were used to evaluate the Ensemble LDA model. Within the topic modelling context, *"a set of statements or facts is said to be coherent, if they support each other"* (Röder et al., 2015). In simple terms, coherence is the *"humans’ semantic appreciation of a topic represented by its N top words"* (Trenquier, 2018). The UMass coherence score relies on document frequency and considers order among the top words of a topic (Röder et al., 2015). It ranges between -14 and 14 and reaches its peak at 0. The UMass was chosen over C_V metric as the latter is not recommended *"when it is used for randomly generated word sets"* (Roeder, 2018). A UMass score of -12.29 was obtained. This indicates topics are not perfectly coherent, however, when it comes to human interpretation, it was the best model obtained through LDA Ensemble. The Perplexity (formula: 2^(-bound)) value is considered acceptable.
 
 **Perplexity and Coherence score over number of topics in the test set**
-![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/f473447e0aca39a2dfc4ae93c85721d5d549a297/output/visuals/lda_gensim_assessment.png)
+![]()
 
 + **Perplexity** = 163.2 
 + **UMass coherence score** = -14.9

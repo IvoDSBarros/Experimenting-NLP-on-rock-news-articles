@@ -162,7 +162,7 @@ A UMass Coherence score and Perplexity were used to evaluate the Ensemble LDA mo
 <br>
 
 **Tableau Public**
-The layout of the vizzes below have been set for desktop. When you use phone/tablet the viewing of the dashboard is not optimal.
+<br>The layout of the vizzes below have been set for desktop. When using phone/tablet, the viewing of the dashboard is not optimal.
 <br>
 
 + [Rock Is Not Dead: 2022 Year In Review](https://public.tableau.com/app/profile/ivo.barros/viz/Rock_Is_Not_Dead_Year_In_Review/Dashboard)

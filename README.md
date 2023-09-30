@@ -152,6 +152,12 @@ A UMass Coherence score and Perplexity were used to evaluate the Ensemble LDA mo
 
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/07fa5db4494b21f3468d70390d497fa3e8b1dff3/output/visuals/rule_based_vs_%20ml_lda.png)
 
+
+**Metallica: the monster still lives**
+<br>Infographic based on the text corpus
+
+![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/bbd96d23028682b430b1a392bc1e343436d3deff/output/visuals/metallica_the_monster_still_lives_infographic.png)
+
 <div align = "right">    
   <a href="#overview">(back to top)</a>
 </div>

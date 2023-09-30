@@ -166,6 +166,9 @@ A UMass Coherence score and Perplexity were used to evaluate the Ensemble LDA mo
 
 + [Rock Is Not Dead: 2022 Year In Review](https://public.tableau.com/app/profile/ivo.barros/viz/Rock_Is_Not_Dead_Year_In_Review/Dashboard)
 
+![](rock_is_not_dead_ 2022_year_in_review _tableau_public.html)
+![](./image.svg)
+
 <div align = "right">    
   <a href="#overview">(back to top)</a>
 </div>

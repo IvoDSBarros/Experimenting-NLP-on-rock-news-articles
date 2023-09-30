@@ -168,9 +168,7 @@ A UMass Coherence score and Perplexity were used to evaluate the Ensemble LDA mo
 
 + [It's Only Rock N' Roll But I Like It: Infographic](https://public.tableau.com/app/profile/ivo.barros/viz/Its_Only_Rock_N_Roll_But_I_Like_It_Infographic/Infographic)
 
-![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/726cf7ac9dd6e145b0aba4f778b8dfc9f931c5ad/output/visuals/rock_is_not_dead_%202022_year_in_review%20_tableau_public.js)
-
-![](./image.svg)
++ [It's Only Rock N' Roll But I Like It: Dashboard](https://public.tableau.com/app/profile/ivo.barros/viz/Its_Only_Rock_N_Roll_But_I_Like_It_Dashboard/Dashboard)
 
 <div align = "right">    
   <a href="#overview">(back to top)</a>

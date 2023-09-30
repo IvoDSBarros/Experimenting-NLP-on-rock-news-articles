@@ -159,6 +159,11 @@ A UMass Coherence score and Perplexity were used to evaluate the Ensemble LDA mo
 
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/bbd96d23028682b430b1a392bc1e343436d3deff/output/visuals/metallica_the_monster_still_lives_infographic.png)
 
+**Tableau Public**
+<br>
+
++ [Rock Is Not Dead: 2022 Year In Review](https://public.tableau.com/app/profile/ivo.barros/viz/Rock_Is_Not_Dead_Year_In_Review/Dashboard)
+
 <div align = "right">    
   <a href="#overview">(back to top)</a>
 </div>

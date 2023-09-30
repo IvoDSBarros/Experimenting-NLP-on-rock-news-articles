@@ -15,7 +15,6 @@ This repository contains multiple NLP experiments on web rock-based news article
 </details>
 
 **Data architecture diagram**
-<br>
 
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/affc7e2c0ac53a99d844b26dcead9fddc760f5b5/output/visuals/data_architecture_diagram.png)
 

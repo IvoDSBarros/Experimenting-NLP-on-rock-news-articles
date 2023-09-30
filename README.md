@@ -88,7 +88,7 @@ Along with the rule-based text classification model, an unsupervised machine lea
 
 + The results obtained through the inverse document frequency (TF–IDF) were not aligned with expectations across both models. Despite its main purpose of scaling down the impact of predominant tokens, the interpretability of topics was not as coherent and as comprehensible as frequencies of events.
 
-+ The hyperparameter optimization of the Scikit-learn LDA model, namely the parameters "n_components" and "learning_decay", was performed using the grid search method. Nevertheless, due to the interpretability rule, the "n_components" search has been > 4.
++ The hyperparameter optimization of the Scikit-learn LDA model, namely the parameters "n_components" and "learning_decay", was performed using the grid search method. Nevertheless, due to low topics interpretability, the "n_components" search was set as > 4.
 
 + A Gensim Ensemble LDA was implemented to overcome the instability and non-reproducibility of the sklearn and "gensim lda"/"ldamulticore" approaches.
 

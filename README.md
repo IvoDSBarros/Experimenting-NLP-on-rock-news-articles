@@ -146,8 +146,8 @@ A UMass Coherence score and Perplexity were used to evaluate the Ensemble LDA mo
 **Perplexity and Coherence score over number of topics in the test set**
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/f473447e0aca39a2dfc4ae93c85721d5d549a297/output/visuals/lda_gensim_assessment.png)
 
-+ **Perplexity** = -8.17 
-+ **UMass coherence score** = -12.29
++ **Perplexity** = 163.2 
++ **UMass coherence score** = -14.9
 
 <br>
 

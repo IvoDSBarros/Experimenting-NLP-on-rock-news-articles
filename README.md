@@ -9,14 +9,15 @@ This repository contains multiple NLP experiments on web rock-based news article
 3. [Topic modelling experiments](#topic-modelling-experiments)
     + [LDA model using Scikit-learn](#1-lda-model-using-scikit-learn)
     + [LDA model using Gensim](#2-lda-model-using-gensim)
-4. [References](#references)
+4. [Visualization portfolio](#visualization-portfolio)
+5. [References](#references)
 
 </details>
 
-**Metallica: the monster still lives**
-<br>Infographic based on the text corpus
+**Data architecture diagram**
+<br>
 
-![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/bbd96d23028682b430b1a392bc1e343436d3deff/output/visuals/metallica_the_monster_still_lives_infographic.png)
+![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/affc7e2c0ac53a99d844b26dcead9fddc760f5b5/output/visuals/data_architecture_diagram.png(
 
 
 ## Dictionary-based Named Entity Recognition

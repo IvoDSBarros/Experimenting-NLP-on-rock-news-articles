@@ -151,6 +151,9 @@ A UMass Coherence score and Perplexity were used to evaluate the Ensemble LDA mo
 + **Perplexity** = 163.2 
 + **UMass coherence score** = -14.9
 
+<div align = "right">    
+  <a href="#overview">(back to top)</a>
+</div>
 
 ## 3. Rule-based text classification Vs. Unsupervised Machine Learning Classification: final thoughts
 
@@ -159,7 +162,6 @@ A UMass Coherence score and Perplexity were used to evaluate the Ensemble LDA mo
 <br>Sklearn and Gensim LDA main topics below 40% were categorized as "multi-category".
 
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/07fa5db4494b21f3468d70390d497fa3e8b1dff3/output/visuals/rule_based_vs_%20ml_lda.png)
-
 
 <div align = "right">    
   <a href="#overview">(back to top)</a>

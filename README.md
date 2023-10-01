@@ -156,7 +156,7 @@ A UMass Coherence score and Perplexity were used to evaluate the Ensemble LDA mo
   <a href="#overview">(back to top)</a>
 </div>
 
-## 3. Rule-based text classification Vs. Machine Learning Classification: final thoughts
+## Rule-based text classification Vs. Machine Learning Classification: final thoughts
 
 **Manual rule-based text classification Vs. Unsupervised Machine Learning Classification**
 <br>The alluvial diagram below is based on the test set.

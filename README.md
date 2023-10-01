@@ -149,7 +149,6 @@ A UMass Coherence score and Perplexity were used to evaluate the Ensemble LDA mo
 + **Perplexity** = 163.2 
 + **UMass coherence score** = -14.9
 
-<br>
 
 #### 3. Final thoughts
 

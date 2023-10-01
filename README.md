@@ -9,7 +9,7 @@ This repository contains multiple NLP experiments on web rock-based news article
 3. [Topic modelling experiments](#topic-modelling-experiments)
     + [LDA model using Scikit-learn](#1-lda-model-using-scikit-learn)
     + [LDA model using Gensim](#2-lda-model-using-gensim)
-4. [Rule-based text classification Vs. Machine Learning classification: final thoughts](#rule-based-text-classification-vs-machine-learning-classification-final-thoughts)
+4. [Rule-based text classification Vs. Machine Learning classification: final thoughts and further reaearch](#rule-based-text-classification-vs-machine-learning-classification-final-thoughts-and-further-reaearch)
 5. [Visualization portfolio](#visualization-portfolio)
 6. [References](#references)
 
@@ -156,7 +156,12 @@ A UMass Coherence score and Perplexity were used to evaluate the Ensemble LDA mo
   <a href="#overview">(back to top)</a>
 </div>
 
-## Rule-based text classification Vs. Machine Learning classification: final thoughts
+## Rule-based text classification Vs. Machine Learning classification: final thoughts and further reaearch
+
+Rule-based systems can be refined over time and are understandable to humans. However, there are certain drawbacks to this strategy. 
+These systems, to begin with, demand in-depth expertise in the field. They take a lot of time since creating rules for a complicated system can be difficult and frequently necessitates extensive study and testing. 
+
+Given that adding new rules can alter the outcomes of the pre-existing rules, rule-based systems are also challenging to maintain and do not scale effectively.
 
 **Manual rule-based text classification Vs. Unsupervised Machine Learning Classification**
 <br>The alluvial diagram below is based on the test set.

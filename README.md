@@ -162,7 +162,7 @@ A UMass Coherence score and Perplexity were used to evaluate the Ensemble LDA mo
 
 ## Rule-based text classification Vs. Machine Learning classification: final thoughts and further reaearch
 
-+ Natural language is intrinsically ambiguous in its lexical, semantic or syntactic form (Yadav et al., 2021). The text corpus of this study, comprised of unlabelled rock news headlines and descriptions, is very revealing of such an ambiguity. More subjectivity and complexity comes along with ambiguity as a news article can be assign to multiple categories making this task a multi-label text classification challenge.
++ Natural language is intrinsically ambiguous in its lexical, semantic or syntactic form (Yadav et al., 2021). The text corpus of this study, comprised of unlabelled rock news headlines and descriptions, is very revealing of such an ambiguity. More subjectivity and complexity come along with ambiguity as a news article can be assign to multiple categories making this task a multi-label text classification challenge.
 
 While this process is time-consuming when done manually, it can be automated with machine learning models. Category classification, for news, is a multi-label text classification problem. The goal is to assign one or more categories to a news article. A standard technique in multi-label text classification is to use a set of binary classifiers.
 

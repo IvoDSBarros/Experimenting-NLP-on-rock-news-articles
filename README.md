@@ -9,7 +9,7 @@ This repository contains multiple NLP experiments on web rock-based news article
 3. [Topic modelling experiments](#topic-modelling-experiments)
     + [LDA model using Scikit-learn](#1-lda-model-using-scikit-learn)
     + [LDA model using Gensim](#2-lda-model-using-gensim)
-4. [Rule-based text classification Vs. Machine Learning Classification: final thoughts](#rule-based-text-classification-vs.-machine-learning-classification:-final-thoughts)
+4. [Rule-based text classification Vs. Machine Learning Classification: final thoughts](#rule-based-text-classification-vs-machine-learning-classification-final-thoughts)
 5. [Visualization portfolio](#visualization-portfolio)
 6. [References](#references)
 

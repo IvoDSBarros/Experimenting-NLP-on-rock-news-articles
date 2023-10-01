@@ -162,12 +162,21 @@ A UMass Coherence score and Perplexity were used to evaluate the Ensemble LDA mo
 
 ## Rule-based text classification Vs. Machine Learning classification: final thoughts and further reaearch
 
-Rule-based systems can be refined over time and are understandable to humans. However, there are certain drawbacks to this strategy. 
++ The rule-based text classification model systems can be refined over time and are understandable to humans. 
+
+Natural language is messy, ambiguous and full of subjective interpretation, and sometimes trying to cleanse ambiguity reduces the language to an unnatural form
+
+However, there are certain drawbacks to this strategy. 
 These systems, to begin with, demand in-depth expertise in the field. They take a lot of time since creating rules for a complicated system can be difficult and frequently necessitates extensive study and testing. 
 
 Given that adding new rules can alter the outcomes of the pre-existing rules, rule-based systems are also challenging to maintain and do not scale effectively.
 
-**Manual rule-based text classification Vs. Unsupervised Machine Learning Classification**
+This rule-based text classification model is intended to identify keywords and assign both topic labels and publication type categories across the unlabelled rock news headlines. A set of pre-defined rules was manually created for this purpose. The core keywords of the rock news headlines' semantic landscape comprise the following: "album", "single", "song', "show", "tour" and "video". The keywords are the basis to derive the classification rules and to assign human-readable contextualized tags.
+
++ The diversity of the rock news headlines' semantic landscape was better captured by the LDA Gensim Ensemble model than the LDA Scikit-learn model
+
+
+**Manual rule-based text classification Vs. Unsupervised Machine Learning classification**
 <br>The alluvial diagram below is based on the test set.
 <br>Sklearn and Gensim LDA main topics below 40% were categorized as "multi-category".
 

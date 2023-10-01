@@ -92,6 +92,8 @@ Along with the rule-based text classification model, an unsupervised machine lea
 
 + A Gensim Ensemble LDA was implemented to overcome the instability and non-reproducibility of the sklearn and "gensim lda"/"ldamulticore" approaches.
 
+<br>
+
 #### 1. LDA model using Scikit-learn 
 #### Results
 **LDA evaluation model metrics in Scikit-learn** <br>
@@ -150,7 +152,7 @@ A UMass Coherence score and Perplexity were used to evaluate the Ensemble LDA mo
 + **UMass coherence score** = -14.9
 
 
-#### 3. Final thoughts
+## 3. Rule-based text classification Vs. Unsupervised Machine Learning Classification: final thoughts
 
 **Manual rule-based text classification Vs. Unsupervised Machine Learning Classification**
 <br>The alluvial diagram below is based on the test set.

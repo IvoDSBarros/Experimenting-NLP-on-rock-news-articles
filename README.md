@@ -162,6 +162,10 @@ A UMass Coherence score and Perplexity were used to evaluate the Ensemble LDA mo
 
 ## Rule-based text classification Vs. Machine Learning classification: final thoughts and further reaearch
 
++ Natural language is intrinsically ambiguous in its lexical, semantic or syntactic form (Yadav et al., 2021). The text corpus of this study, comprised of unlabelled rock news headlines and descriptions, is very revealing of such an ambiguity. Furthermore, 
+
+
+
 + The rule-based text classification model systems can be refined over time and are understandable to humans. 
 
 Natural language is messy, ambiguous and full of subjective interpretation, and sometimes trying to cleanse ambiguity reduces the language to an unnatural form
@@ -174,7 +178,7 @@ Given that adding new rules can alter the outcomes of the pre-existing rules, ru
 This rule-based text classification model is intended to identify keywords and assign both topic labels and publication type categories across the unlabelled rock news headlines. A set of pre-defined rules was manually created for this purpose. The core keywords of the rock news headlines' semantic landscape comprise the following: "album", "single", "song', "show", "tour" and "video". The keywords are the basis to derive the classification rules and to assign human-readable contextualized tags.
 
 + The diversity of the rock news headlines' semantic landscape was better captured by the LDA Gensim Ensemble model than the LDA Scikit-learn model
-
++ Innacurate tagging was shown in coth models but is more expressive in the scikit learn.
 
 **Manual rule-based text classification Vs. Unsupervised Machine Learning classification**
 <br>The alluvial diagram below is based on the test set.
@@ -217,6 +221,7 @@ This rule-based text classification model is intended to identify keywords and a
 + [Roeder, M. (2018) Not being able to replicate coherence scores from paper #13](https://github.com/dice-group/Palmetto/issues/13)
 + [Sievert, C., Shirley, K. (2014, June) LDAvis: A method for visualizing and interpreting topic. Proceedings of the Workshop on Interactive Language Learning, Visualization, and Interfaces, 63–70.](https://nlp.stanford.edu/events/illvi2014/papers/sievert-illvi2014.pdf) 
 + [Trenquier, H. (2018) Improving Semantic Quality of Topic Models for Forensic Investigations. University of Amsterdam, MSc System and Network Engineering Research Project 2.](https://rp.os3.nl/2017-2018/p76/report.pdf)
++ [Yadav, A., Patel, A., Shah, M. (2021) A comprehensive review on resolving ambiguities in natural language processing. AI Open, Volume 2, Pages 85-92](https://www.sciencedirect.com/science/article/pii/S2666651021000127)
 
 <div align = "right">    
   <a href="#overview">(back to top)</a>

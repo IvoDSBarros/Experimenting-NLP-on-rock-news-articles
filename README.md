@@ -115,6 +115,7 @@ To get a visual overview of the lda model, the Python library “pyLDAvis” bas
 
 <br>
 
+**Topics**
 + Topic 0: album and single releases;
 + Topic 1: tour announcement;
 + Topic 2: live performance and song related;

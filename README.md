@@ -170,7 +170,7 @@ A UMass Coherence score and Perplexity were used to evaluate the Ensemble LDA mo
 
 + A hybrid text classification method will be implemented using the generated labelled data of the rule-based text classification model.
 
-+ Following the approach of M. Kelechava (2019), the LDA Gensim Ensemble model will be further tuned     
++ Following the approach of M. Kelechava (2019), the LDA Gensim Ensemble model will be also used as a basis for a machine learning supervised model.    
 
 <br>
 

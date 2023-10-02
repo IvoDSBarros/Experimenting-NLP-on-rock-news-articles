@@ -164,7 +164,7 @@ A UMass Coherence score and Perplexity were used to evaluate the Ensemble LDA mo
 
 + Natural language is intrinsically ambiguous in its lexical, semantic or syntactic form (Yadav et al., 2021). The text corpus of this study, comprised of unlabelled rock news headlines and descriptions, is very revealing of such an ambiguity. More subjectivity and complexity come along with ambiguity as a news article can be assigned to multiple categories making this process a multi-label text classification challenge.
 
-+ The rule-based text classification model is more reliable as a whole, more flexible and more capable with regards to human interpretation.  
++ The rule-based text classification model is more reliable as a whole, more flexible and more capable and intuitive with regards to human interpretation.  
 
 While this process is time-consuming when done manually, it can be automated with machine learning models. Category classification, for news, is a multi-label text classification problem. The goal is to assign one or more categories to a news article. A standard technique in multi-label text classification is to use a set of binary classifiers.
 

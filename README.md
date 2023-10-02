@@ -164,27 +164,9 @@ A UMass Coherence score and Perplexity were used to evaluate the Ensemble LDA mo
 
 + Natural language is intrinsically ambiguous in its lexical, semantic or syntactic form (Yadav et al., 2021). The text corpus of this study, comprised of unlabelled rock news headlines and descriptions, is very revealing of such an ambiguity. More subjectivity and complexity come along with ambiguity as a news article can be assigned to multiple categories making this process a multi-label text classification challenge.
 
-+ The rule-based text classification model is more reliable as a whole, more flexible and more accurate with regards to human interpretation. However, the required analysis to set up and maintain a manual rule based text classifier is very demanding and time-consuming. Furthermore, the developed manual rule based text classifier also generates some innacurate assignments.
++ The rule-based text classification model is more reliable as a whole, more flexible and more accurate with regards to human interpretation. However, the required analysis to set up and maintain a manual rule-based text classifier is very demanding and time-consuming. Furthermore, the developed manual rule-based text classifier also generates some inaccurate assignments.
 
-
-
-While this process is time-consuming when done manually, it can be automated with machine learning models. Category classification, for news, is a multi-label text classification problem. The goal is to assign one or more categories to a news article. A standard technique in multi-label text classification is to use a set of binary classifiers.
-
-https://hedimanai.medium.com/machine-learning-text-classification-of-news-articles-bd5d70473037
-
-+ The rule-based text classification model systems can be refined over time and are understandable to humans. 
-
-Natural language is messy, ambiguous and full of subjective interpretation, and sometimes trying to cleanse ambiguity reduces the language to an unnatural form
-
-However, there are certain drawbacks to this strategy. 
-These systems, to begin with, demand in-depth expertise in the field. They take a lot of time since creating rules for a complicated system can be difficult and frequently necessitates extensive study and testing. 
-
-Given that adding new rules can alter the outcomes of the pre-existing rules, rule-based systems are also challenging to maintain and do not scale effectively.
-
-This rule-based text classification model is intended to identify keywords and assign both topic labels and publication type categories across the unlabelled rock news headlines. A set of pre-defined rules was manually created for this purpose. The core keywords of the rock news headlines' semantic landscape comprise the following: "album", "single", "song', "show", "tour" and "video". The keywords are the basis to derive the classification rules and to assign human-readable contextualized tags.
-
-+ The diversity of the rock news headlines' semantic landscape was better captured by the LDA Gensim Ensemble model than the LDA Scikit-learn model
-+ Innacurate tagging was shown in coth models but is more expressive in the scikit learn.
++ Instability and non-reproducibility are two well-known issues of the LDA algorithm. In respect of reliability, flexibility and accuracy, the rule-based text classifier outperformed both unsupervised machine learning models. The diversity of the rock news headlines' semantic landscape was better captured by the LDA Gensim Ensemble model than the LDA Scikit-learn model. Inaccurate assignments were recurring in both LDA models but more expressive in the Scikit-learn.
 
 **Manual rule-based text classification Vs. Unsupervised Machine Learning classification**
 <br>The alluvial diagram below is based on the test set.

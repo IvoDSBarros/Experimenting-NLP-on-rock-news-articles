@@ -168,6 +168,12 @@ A UMass Coherence score and Perplexity were used to evaluate the Ensemble LDA mo
 
 + Instability and non-reproducibility are two well-known issues of the LDA algorithm. In respect of reliability, flexibility and accuracy, the rule-based text classifier outperformed both unsupervised machine learning models. The diversity of the rock news headlines' semantic landscape was better captured by the LDA Gensim Ensemble model than the LDA Scikit-learn model. Inaccurate assignments were recurring in both LDA models but more expressive in the Scikit-learn.
 
++ A hybrid text classification method will be implemented using the generated labelled data of the rule-based text classification model.
+
++ Following the approach of M. Kelechava (2019), the LDA Gensim Ensemble model will be further tuned     
+
+<br>
+
 **Manual rule-based text classification Vs. Unsupervised Machine Learning classification**
 <br>The alluvial diagram below is based on the test set.
 <br>Sklearn and Gensim LDA main topics below 40% were categorized as "multi-category".

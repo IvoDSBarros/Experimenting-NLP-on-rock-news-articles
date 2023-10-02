@@ -9,7 +9,7 @@ This repository contains multiple NLP experiments on web rock-based news article
 3. [Topic modelling experiments](#topic-modelling-experiments)
     + [LDA model using Scikit-learn](#1-lda-model-using-scikit-learn)
     + [LDA model using Gensim](#2-lda-model-using-gensim)
-4. [Rule-based text classification Vs. Machine Learning classification: final thoughts and further reaearch](#rule-based-text-classification-vs-machine-learning-classification-final-thoughts-and-further-reaearch)
+4. [Rule-based text classification Vs. Machine Learning classification: final thoughts and further research](#rule-based-text-classification-vs-machine-learning-classification-final-thoughts-and-further-research)
 5. [Visualization portfolio](#visualization-portfolio)
 6. [References](#references)
 
@@ -164,7 +164,7 @@ A UMass Coherence score and Perplexity were used to evaluate the Ensemble LDA mo
   <a href="#overview">(back to top)</a>
 </div>
 
-## Rule-based text classification Vs. Machine Learning classification: final thoughts and further reaearch
+## Rule-based text classification Vs. Machine Learning classification: final thoughts and further research
 
 + Natural language is intrinsically ambiguous in its lexical, semantic or syntactic form (Yadav et al., 2021). The text corpus of this study, comprised of unlabelled rock news headlines and descriptions, is very revealing of such an ambiguity. More subjectivity and complexity come along with ambiguity as a news article can be assigned to multiple categories making this process a multi-label text classification challenge.
 

@@ -167,7 +167,7 @@ A UMass Coherence score and Perplexity were used to evaluate the Ensemble LDA mo
 
 + The rule-based text classification model is more reliable as a whole, more flexible and more accurate with regards to human interpretation. However, the required analysis to set up and maintain a manual rule-based text classifier is very demanding and time-consuming. Furthermore, the developed manual rule-based text classifier also generates some inaccurate assignments.
 
-+ Instability and non-reproducibility are two well-known issues of the LDA algorithm. In respect of reliability, flexibility and accuracy, the rule-based text classifier outperformed both unsupervised machine learning models. The diversity of the rock news headlines' semantic landscape was better captured by the LDA Gensim Ensemble model than the LDA Scikit-learn model. Inaccurate assignments were recurring in both LDA models but more expressive in the Scikit-learn.
++ Instability and non-reproducibility are two well-known issues of the LDA algorithm. In respect of reliability, flexibility and accuracy, the rule-based text classifier outperformed both unsupervised machine learning models. The diversity of the rock news headlines' semantic landscape was better captured by the LDA Gensim Ensemble model than the LDA Scikit-learn model. Inaccurate assignments were recurring in both LDA models but more critical in the Scikit-learn.
 
 + A hybrid text classification method will be implemented using the generated labelled data of the rule-based text classification model.
 

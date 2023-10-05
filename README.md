@@ -124,6 +124,11 @@ To get a visual overview of the LDA model, the Python library “pyLDAvis” bas
 
 <br>
 
+**Labelling accuracy on the album and single releases topic**
+![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/c18eb789436d97879caef7f740198500bd8c57b5/output/visuals/sklearn_labelling_accuracy_album.png)
+
+<br>
+
 #### 2. LDA model using Gensim
 Replicability and instability are two major issues of topic modelling. The Ensemble LDA method aims to mitigate these issues by *"finding and generating stable topics from the results of multiple topic models"* and remove topics *"that are noise and are not reproducible"* (Řehůřek, 2022b). Additionally, there is no *"need to know the exact number of topics ahead of time"* (Řehůřek, 2022a).
 

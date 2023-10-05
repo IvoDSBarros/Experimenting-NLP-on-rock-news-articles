@@ -165,7 +165,7 @@ A UMass Coherence score and Perplexity were used to evaluate the Ensemble LDA mo
 <br>
 
 **Labelling accuracy on the album related topic**
-![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/f5a0c6758d1a294d41199800ca78fdd4914ec9ea/output/visuals/lda_sklearn_labelling_accuracy_album.png)
+![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/0bcf5c2745a471b78d45b82f19e07cc67ab5ee11/output/visuals/lda_gensim_labelling_accuracy_album.png)
 
 <div align = "right">    
   <a href="#overview">(back to top)</a>

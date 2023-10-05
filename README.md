@@ -125,7 +125,7 @@ To get a visual overview of the LDA model, the Python library “pyLDAvis” bas
 <br>
 
 **Labelling accuracy on the album related topic**
-![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/f5a0c6758d1a294d41199800ca78fdd4914ec9ea/output/visuals/lda_sklearn_labelling_accuracy_album.png)
+![]()
 
 <br>
 

@@ -124,7 +124,7 @@ To get a visual overview of the LDA model, the Python library “pyLDAvis” bas
 
 <br>
 
-**Labelling accuracy on the album related topic: rule-based model vs Scikit-learn model**
+**Labelling accuracy on the album related topic**
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/f1d7d492f3e163515b9d3fbcacc15726abc42328/output/visuals/lda_sklearn_labelling_accuracy_album.png)
 
 <br>

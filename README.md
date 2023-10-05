@@ -124,8 +124,8 @@ To get a visual overview of the LDA model, the Python library “pyLDAvis” bas
 
 <br>
 
-**Labelling accuracy on the album related topic**
-![]()
+**Labelling accuracy on the album and single releases topic**
+![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/9b0df970a24bc29f8543ae6581344d713321e632/output/visuals/lda_sklearn_labelling_accuracy_album_single.png)
 
 <br>
 
@@ -164,7 +164,7 @@ A UMass Coherence score and Perplexity were used to evaluate the Ensemble LDA mo
 
 <br>
 
-**Labelling accuracy on the album related topic**
+**Labelling accuracy on the album announcement topic**
 ![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/0bcf5c2745a471b78d45b82f19e07cc67ab5ee11/output/visuals/lda_gensim_labelling_accuracy_album.png)
 
 <div align = "right">    

@@ -126,7 +126,7 @@ To get a visual overview of the LDA model, the Python library “pyLDAvis” bas
 <br>
 
 **Labelling accuracy of the topic "album and single releases"**
-![]()
+![](https://github.com/IvoDSBarros/Rock-is-not-dead_NLP-experiments-on-rock-news-articles/blob/51e7c119dd079256fdc97f82be3fe9482e4b308b/output/visuals/lda_sklearn_labelling_accuracy_album_single.png)
 
 <br>
 

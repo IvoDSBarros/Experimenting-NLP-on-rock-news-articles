@@ -1,3 +1,4 @@
+# Rock is not dead: NLP experiments on rock news articles
 # Overview
 This repository contains multiple NLP experiments on web rock-based news articles. The text corpus is comprised by 20K rock news headlines and descriptions with unlabelled data (for demonstration purposes, a random subset of 2K articles is available in this repository). The data was retrieved between January 2022 and September 2023 from 6 specialized rock websites: Loudersound, loudwire, Ultimate Classic Rock, Kerrang!, Planet Rock and The New York Times.
 
@@ -125,7 +126,7 @@ To get a visual overview of the LDA model, the Python library “pyLDAvis” bas
 <br>
 
 **Labelling accuracy on the album and single releases topic**
-![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/9b0df970a24bc29f8543ae6581344d713321e632/output/visuals/lda_sklearn_labelling_accuracy_album_single.png)
+![]()
 
 <br>
 

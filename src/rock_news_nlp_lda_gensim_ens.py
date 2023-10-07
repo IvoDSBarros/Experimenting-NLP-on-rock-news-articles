@@ -44,8 +44,8 @@ def dictionary(text_corpus, *args, **kwargs):
         no_above : float
         keep_n : int
         
-	Returns:
- 		corpora.dictionary.Dictionary
+    Returns:
+        corpora.dictionary.Dictionary
     """
     dictionary = corpora.Dictionary(text_corpus)
     dictionary.filter_extremes(*args, **kwargs)
@@ -59,8 +59,8 @@ def save_dictionary(path, dictionary, dictionary_name):
         dictionary : corpora.dictionary.Dictionary
         dictionary_name : str
         
-	Returns:
- 		Write the representation of the gensim dictionary to a file
+    Returns:
+        Write the representation of the gensim dictionary to a file
     """
     temp_file = datapath(f'{path}/{dictionary_name}')
     dictionary.save(temp_file)
@@ -72,8 +72,8 @@ def load_dictionary(dictionary_name):
     Args:
         dictionary_name : str
         
-	Returns:
- 		corpora.dictionary.Dictionary
+    Returns:
+        corpora.dictionary.Dictionary
     """
     dictionary = Dictionary.load(dictionary_name)
     return dictionary
@@ -86,8 +86,8 @@ def corpus_bow(text_corpus,dictionary):
         text_corpus : list
         dictionary : corpora.dictionary.Dictionary
         
-	Returns:
- 		list, interfaces.TransformedCorpus
+    Returns:
+        list, interfaces.TransformedCorpus
     """
     corpus = [dictionary.doc2bow(i) for i in text_corpus]
     tfidf = models.TfidfModel(corpus)
@@ -108,8 +108,8 @@ def ens_lda_model(corpus, dictionary):
         passes : int
         topic_model_class : str
         
-	Returns:
-		models.ensemblelda.EnsembleLda
+    Returns:
+        models.ensemblelda.EnsembleLda
     """ 
     return EnsembleLda(
                         corpus=corpus, 
@@ -131,8 +131,8 @@ def topics_ens_lda(ens_lda_model):
     Args:
         ens_lda_model : models.ensemblelda.EnsembleLda
         
- 	Returns:
-		dict
+    Returns:
+	dict
     """
     dict_ens_lda_topics_p = dict(ens_lda_model.print_topics())
     dict_ens_lda_top_5_words = {i: re.sub('[^A-Za-z ]+', ' ', x).split() for i, x in ens_lda_model.print_topics(num_words=5)}
@@ -149,7 +149,7 @@ def df_output(ens_lda_model, dictionary, text_corpus, dict_ens_lda_topics_p, dic
         dict_ens_lda_topics_p : dict
         dict_ens_lda_top_5_words : dict
         
- 	Returns:
+    Returns:
     	DataFrame
     """
     list_ens_lda_prob = [[j[1] for j in i] for i in ens_lda_model[text_corpus]]
@@ -219,7 +219,6 @@ def metric_coherence(*args, **kwargs):
     return coherence_model_ens_lda.get_coherence()
 
 def main():
-
     global num_topics
     global num_models
     global ens_workers
@@ -245,15 +244,6 @@ def main():
     model_perplexity = metric_perplexity(lda_model, corpus)
     coherence_score = metric_coherence(model=lda_model, texts=text_corpus_clean, dictionary=dictionary_lda, coherence='u_mass')
     utils_tpp.print_lda_model_topics_stats(dict_ens_lda_top_5_words,model_perplexity,coherence_score )
-
-
-    # ############
-    # import pyLDAvis.gensim_models
-    # lda_visual = pyLDAvis.gensim_models.prepare(topic_model=lda_model, corpus=corpus, dictionary=dictionary_lda)
-    # pyLDAvis.display(lda_visual)
-    # pyLDAvis.save_html(lda_visual, r'C:\Users\HP\Desktop/FileModel.html')
-    # ############
-     
 
 if __name__ == "__main__":
     main()

@@ -19,8 +19,8 @@ def text_preprocessing(lst):
     Args:
         lst : list         
 		
-	Returns:
-		list
+    Returns:
+	list
     """   
     
     lst_txt_temp = [tpp.remove_punctuation(i) for i in lst]
@@ -37,8 +37,8 @@ def dfcol_to_list(df,df_column):
         df : DataFrame
         df_column : str
 		
-	Returns:
-		list     
+    Returns:
+	list     
     """    
     list_df_col = df[df_column].to_list()
     list_clean = text_preprocessing(list_df_col)

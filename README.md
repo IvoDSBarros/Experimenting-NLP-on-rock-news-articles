@@ -18,7 +18,7 @@ This repository contains multiple NLP experiments on web rock-based news article
 
 **Data architecture diagram**
 
-![](https://github.com/IvoDSBarros/Experimenting-NLP-on-rock-news-articles/blob/343d09dd3fb787d5556cd9eede57083698ed784d/output/visuals/data_architecture_diagram.png)
+![]()
 
 
 ## Dictionary-based Named Entity Recognition

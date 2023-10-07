@@ -37,37 +37,3 @@ model_perplexity = lda_model.perplexity(word_freq_count_pred)
 log_likelihood_score = lda_model.score(word_freq_count_pred)
 utils_tpp.print_lda_model_topics_stats(dict_topics,model_perplexity,log_likelihood_score)
 print("...it has been completed sucessfully in %0.1fs." % (time() - t_start))
-
- 
-# """
-# # https://gist.github.com/ululh/c3edda2497b8ff9d4f70e63b0c9bd78c
-# """
-
-# lst = ['Metallica are touring Europe this summer', 
-#         'Slash has confirmed a new GNR album',
-#         'A new drummer joined Foo Fighters',
-#         "New rock bands don't succeed as in the past"]
-
-
-# clean_lst = tpp.text_preprocessing_to_sklearn(lst)
-# vec_data = count_vec.transform(clean_lst)
-# predict = lda_model.transform(vec_data)
-
-
-#     def topic_prediction(unseen_text_corpus, lda_model, word_freq_count):
-#         """
-#         To predict topics on unseen text corpus
-        
-#         Args:
-#             unseen_text_corpus : list
-#             lda_model : decomposition._lda.LatentDirichletAllocation
-#             word_freq_count : sparce.csr.csr_matrix
-        
-#     	Returns:
-#     		Array of float64, list
-#         """
-#         text_corpus_clean = tpp.text_preprocessing_to_sklearn(unseen_text_corpus)    
-#         text_corpus_clean = word_freq_count.transform(text_corpus_clean)
-#         topic_probability_scores = lda_model.transform(text_corpus_clean)
-#         top_words = [[word_freq_count.get_feature_names()[i] for i in j.argsort()[-5:][::-1]] for i, j in enumerate(lda_model.components_)]    
-#         return topic_probability_scores, top_words

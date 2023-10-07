@@ -52,7 +52,6 @@ type_publication['birthday reminder'].extend([1 if tpp.word_search('birthdays', 
 ## 1.3. CORE TEXT PREPROCESSING TASKS
 corpus_title_clean = tpp.text_preprocessing_rule_based_txt_class(corpus_title)
 
-
 #==============================================================================
 # 2. TEXT CLASSIFICATION
 #==============================================================================
@@ -112,7 +111,6 @@ df_category_tags_prep['sub_category_tags'] = df_category_tags_prep['sub_category
 df_category_tags_prep['category_tags'] = df_category_tags_prep['category_tags'].apply(lambda j: ['diverse topics'] if bool(j)==False else j)
 df_category_tags_prep['type_publication'] = df_category_tags_prep['type_publication'].apply(lambda j: ['general'] if bool(j)==False else j)
 df_rock_news_category_tags = df_category_tags_prep.drop('title', axis=1)
-
 
 #==============================================================================
 # 3. SAVE DATA AS CSV FILE

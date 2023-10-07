@@ -35,8 +35,8 @@ def pipeline(text_corpus, *args, **kwargs):
         min_df : float in range [0.0, 1.0] or int
         ngram_range : tuple
         
- 	Returns:
-  		sparce.csr.csr_matrix
+    Returns:
+        sparce.csr.csr_matrix
     """
     return Pipeline([('count', CountVectorizer(*args, **kwargs)),
                       ('tfid', TfidfTransformer())]).fit(text_corpus)
@@ -52,8 +52,8 @@ def lda(n_components, learning_method, learning_decay, max_iter, random_state):
         max_iter : int
         random_state : int
         
- 	Returns:
-		decomposition._lda.LatentDirichletAllocation
+    Returns:
+        decomposition._lda.LatentDirichletAllocation
     """
     return LDA(
                 n_components=n_components, 
@@ -72,8 +72,8 @@ def topics(lda, counts):
         lda : decomposition._lda.LatentDirichletAllocation
         counts : sparce.csr.csr_matrix
         
- 	Returns:
-		dict
+    Returns:
+        dict
     """
     topic_id = [i for i in range(lda.n_components)]
     top_words = [[counts.get_feature_names_out()[i] for i in j.argsort()[-5:][::-1]] for i, j in enumerate(lda.components_)]
@@ -88,8 +88,8 @@ def df_output(lda_array, dict_topics):
         lda_array : Array of float64
         dict_topics : dict
     
- 	Returns:
-		DataFrame
+    Returns:
+        DataFrame
     """
     df_lda_output = pd.DataFrame(np.round(lda_array, 2))
     df_lda_output['main_topic'] = np.argmax(df_lda_output.values, axis=1)
@@ -106,8 +106,8 @@ def grid_search(dict_grid_search, word_freq_count):
         dict_grid_search : dict
         word_freq_count : sparce.csr.csr_matrix
     
- 	Returns:
-		model_selection._search.GridSearchCV
+    Returns:
+        model_selection._search.GridSearchCV
     """
     lda = LDA()
     gs_model = GridSearchCV(lda, param_grid=dict_grid_search)
@@ -123,8 +123,8 @@ def topic_prediction(unseen_text_corpus, lda_model, word_freq_count):
         lda_model : decomposition._lda.LatentDirichletAllocation
         word_freq_count : sparce.csr.csr_matrix
     
- 	Returns:
-		Array of float64, list
+    Returns:
+        Array of float64, list
     """
     text_corpus_clean = tpp.text_preprocessing_to_sklearn(unseen_text_corpus)    
     word_freq_count_pred = word_freq_count.transform(text_corpus_clean)
@@ -144,8 +144,8 @@ def model_viz(text_corpus, lda_model, vectorizer, path, filename):
         path : str
         filename : str
         
- 	Returns:
-		Save an embedded visualization to file
+    Returns:
+        Save an embedded visualization to file
     """
     lda_visual = pyLDAvis.lda_model.prepare(
                                             lda_model, 

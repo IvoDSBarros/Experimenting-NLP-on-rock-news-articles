@@ -111,7 +111,6 @@ utils_tpp.remove_dups_sort_lists(df_category_tags_prep,['keywords','sub_category
 df_category_tags_prep['sub_category_tags'] = df_category_tags_prep['sub_category_tags'].apply(lambda j: ['diverse topics'] if bool(j)==False else j)
 df_category_tags_prep['category_tags'] = df_category_tags_prep['category_tags'].apply(lambda j: ['diverse topics'] if bool(j)==False else j)
 df_category_tags_prep['type_publication'] = df_category_tags_prep['type_publication'].apply(lambda j: ['general'] if bool(j)==False else j)
-
 df_rock_news_category_tags = df_category_tags_prep.drop('title', axis=1)
 
 

@@ -31,7 +31,6 @@ def return_empty_list_from_nan(df,df_column_list):
         isnull_flag = df[i].isnull()
         df.loc[isnull_flag, i] = pd.Series([[]] * isnull_flag.sum()).values
 
-
 def replace_list_empty_string(df,df_column_list):
     """
     To replace list with an empty string by an empty list across a dataframe
@@ -46,7 +45,6 @@ def replace_list_empty_string(df,df_column_list):
     for i in df_column_list:
         df[i] = df[i].apply(lambda j: [] if len(j)>0 and j[0]=='' else j)
         
-
 def remove_dups_sort_lists(df,df_column_list):
     """
     To remove duplicates and sort lists across dataframe columns
@@ -61,7 +59,6 @@ def remove_dups_sort_lists(df,df_column_list):
     for i in df_column_list:
         df[i] = df[i].map(lambda j: sorted(set(j)))
         
-      
 def load_text_corpus(file_path,file_name,sep,converter,col_name):
     """
     To read tabular data in CSV format and convert a column of texts into a 

@@ -2,12 +2,11 @@
 Rock News NLP: news articles web scraper
 Created on Sat Feb 19 18:12:13 2022
 @author: IvoBarros
+"""
 
 #==============================================================================
 # For proof of concept, this web scraper is restricted to the loudwire website
 #==============================================================================
-
-"""
 
 import requests
 from bs4 import BeautifulSoup 
@@ -111,11 +110,9 @@ def incremental_load(source_web_data, destination_web_data, last_date):
 print("The script is running...")
 t_start = time()
 
-
 #==============================================================================
 # 1. LOAD AND PREPARE DATA
 #==============================================================================
-
 path_parent_dir = os.path.dirname(os.getcwd())
 path_data_web_scrapers = f'{path_parent_dir}\data\web_scrapers'
 df_rock_news = pd.read_csv(f'{path_data_web_scrapers}/rock_news.csv',sep=';')
@@ -124,11 +121,9 @@ max_date_bysite = df_rock_news.groupby(['website']).agg({'date': np.max})
 last_date = max_date_bysite['date'].min()
 list_links = df_rock_news['link'].tolist()                                    
 
-
 #==============================================================================
-# 2. WEBSCRAPING TASKS AND INCREMENTAL LOAD
+# 2. WEB SCRAPING TASKS AND INCREMENTAL LOAD
 #==============================================================================
-
 multiple_links = get_links_loudwire(4, list_links)                                              
 df_rock_news_delta = extract_news_articles_attributes(multiple_links)  
 df_rock_news_updated = incremental_load(df_rock_news_delta, df_rock_news, last_date)

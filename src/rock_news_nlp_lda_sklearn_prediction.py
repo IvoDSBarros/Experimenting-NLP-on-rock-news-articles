@@ -1,5 +1,5 @@
 """
-Rock News NLP: Topic Modeling Sklearn Prediction
+Rock News NLP: Topic Modelling LDA Sklearn Prediction
 Created on Sun Aug  6 17:51:13 2023
 @author: IvoBarros
 """

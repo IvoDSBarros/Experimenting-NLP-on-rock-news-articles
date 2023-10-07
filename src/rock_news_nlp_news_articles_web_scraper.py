@@ -14,7 +14,8 @@ import pandas as pd
 import numpy as np 
 import os
 from datetime import datetime
-from time import time
+from time import time, sleep
+from random import randint
 
 def get_links_loudwire(nr_pages, links_web_data_source):
     """
@@ -24,8 +25,8 @@ def get_links_loudwire(nr_pages, links_web_data_source):
         nr_pages : int
         links_web_data_source : list
         
-	Returns:
- 		list
+    Returns:
+        list
     """
     website = 'https://loudwire.com/category/news/'
     links_pages = []
@@ -45,7 +46,8 @@ def get_links_loudwire(nr_pages, links_web_data_source):
                 if j['href'].count('/')==4:
                     multiple_links.append("https:" + j['href'])
         except:
-            pass
+            pass   
+        sleep(randint(2,5))
         
     multiple_links = list(set(multiple_links))
     
@@ -58,8 +60,8 @@ def extract_news_articles_attributes(links):
     Args:
         links : list
         
-	Returns:
- 		DataFrame
+    Returns:
+        DataFrame
     """   
     web_data = {"website": [], "title": [], "description": [], "body": [], "date": [], "link": []}
     
@@ -75,7 +77,8 @@ def extract_news_articles_attributes(links):
             web_data['link'].append(i)
         except:
             pass
-
+        sleep(randint(2,5))
+        
     return  pd.DataFrame(web_data)
 
 def incremental_load(source_web_data, destination_web_data, last_date):
@@ -88,8 +91,8 @@ def incremental_load(source_web_data, destination_web_data, last_date):
         destination_web_data : DataFrame
         last_date : date
         
- 	Returns:
-  		DataFrame
+    Returns:
+        DataFrame
     """   
     source_web_data['date'] = pd.to_datetime(source_web_data['date']).dt.date
 

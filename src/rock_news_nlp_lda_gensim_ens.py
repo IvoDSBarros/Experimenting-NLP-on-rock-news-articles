@@ -1,5 +1,5 @@
 """
-Rock News NLP: Topic Modeling Gensim
+Rock News NLP: Topic Modelling LDA Gensim Ensemble
 Created on Sun May 29 18:27:15 2023
 @author: IvoBarros
 """

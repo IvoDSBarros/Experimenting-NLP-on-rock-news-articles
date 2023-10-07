@@ -18,15 +18,15 @@ path_data_data_subsets = f'{path_parent_dir}\data\data_subsets'
 def return_empty_list_from_nan(df,df_column_list):
     """
     To replace NaN values with an empty list across a dataframe
-    Approach proposed on Stack Overflow (question: 33199193; user: PlasmaBinturong)
+    Approach proposed on Stack Overflow (question 33199193, PlasmaBinturong)
 
     Args:
         df : DataFrame
         df_column_list : list
     
-	Returns:
-		list
-	"""  
+    Returns:
+        list
+    """  
     for i in df_column_list:
         isnull_flag = df[i].isnull()
         df.loc[isnull_flag, i] = pd.Series([[]] * isnull_flag.sum()).values
@@ -39,9 +39,9 @@ def replace_list_empty_string(df,df_column_list):
         df : DataFrame
         df_column_list : list
 		
-	Returns:
-		list
-	"""
+    Returns:
+        list
+    """
     for i in df_column_list:
         df[i] = df[i].apply(lambda j: [] if len(j)>0 and j[0]=='' else j)
         
@@ -53,9 +53,9 @@ def remove_dups_sort_lists(df,df_column_list):
         df : DataFrame
         df_column_list : list
     
-	Returns:
-		list
-	"""
+    Returns:
+	list
+    """
     for i in df_column_list:
         df[i] = df[i].map(lambda j: sorted(set(j)))
         
@@ -71,8 +71,8 @@ def load_text_corpus(file_path,file_name,sep,converter,col_name):
         converter : dictionary
         col_name : str
     
-	Returns:
-		dataframe
+    Returns:
+        DataFrame
     """
     df_temp = pd.read_csv(f'{file_path}/{file_name}',sep=sep,converters=converter)
     df_temp = df_temp.loc[:, [col_name]]
@@ -131,8 +131,8 @@ def print_lda_model_topics_stats(dict_topics,perplexity,lda_model_specific_stat)
         perplexity : float64
         lda_model_specific_stat : float64
         
- 	Returns:
-		Displays a formatted message on the topics and performance stats 
+     Returns:
+	Displays a formatted message on the topics and performance stats 
         of an LDA model 
     """
     str_topics = ""  

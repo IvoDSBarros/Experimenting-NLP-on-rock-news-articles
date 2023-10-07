@@ -88,7 +88,6 @@ corpus_title_desc_clean = text_preprocessing(corpus_title_desc)
 keyword_dict = df_dict_text_clean_support.groupby('values')['key'].agg(list).to_dict()
 corpus_title_desc_clean = [tpp.replace_keywords(i, keyword_dict) for i in corpus_title_desc_clean]
 
-
 #==============================================================================
 # 2. IDENTIFY AND EXTRACT THE ROCK ARTIST AND THE ROCK ARTIST MEMBER
 #==============================================================================
@@ -125,7 +124,6 @@ utils_tpp.return_empty_list_from_nan(df_rock_artist_tags,['rock_artist_tags_prep
 utils_tpp.replace_list_empty_string(df_rock_artist_tags,['rock_artist_tags_prep','rock_artist_tags_add','tags_rock_artist_from_member_tags','members_tags'])
 df_rock_artist_tags['rock_artist_tags'] = df_rock_artist_tags['rock_artist_tags_prep'] + df_rock_artist_tags['rock_artist_tags_add'] + df_rock_artist_tags['tags_rock_artist_from_member_tags']
 utils_tpp.remove_dups_sort_lists(df_rock_artist_tags,['rock_artist_tags','members_tags'])
-
 
 #==============================================================================
 # 3. SAVE DATA AS CSV FILE

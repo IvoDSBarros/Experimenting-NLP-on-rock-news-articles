@@ -23,8 +23,8 @@ def get_rock_subgenre_links(website):
     Args:
         website : str
         
-	Returns:
- 		list
+    Returns:
+ 	list
     """
     page = requests.get(website)
     soup = BeautifulSoup(page.content, 'html.parser')
@@ -44,8 +44,8 @@ def get_rock_artist_links(links_subgenres):
     Args:
         links_subgenres : list
         
-	Returns:
- 		list
+    Returns:
+	list
     """ 
     links_rock_artist = []
     rock_artist_genre = []
@@ -72,8 +72,8 @@ def extract_wiki_artist_infobox_attributes(links_rock_artist, rock_artist_genre)
         links_rock_artist : list
         rock_artist_genre : list
         
-	Returns:
- 		DataFrame
+    Returns:
+ 	DataFrame
     """   
     web_data = {"rock_artist": [], "genre": [], "label": [], "description": []}
 
@@ -149,66 +149,3 @@ links_rock_artist, rock_artist_genre = get_rock_artist_links(links_subgenres)
 wiki_list_acid_rock_artist = extract_wiki_artist_infobox_attributes(links_rock_artist, rock_artist_genre)
 # wiki_list_acid_rock_artist.to_csv(f'{path_data_web_scrapers}/wiki_list_acid_rock_artist.csv', header=True, index=False, encoding='utf-8',sep=';')
 print("...it has been completed sucessfully in %0.1fs." % (time() - t_start))
-
-
-
-
-# links_rock_artist = ['https://en.wikipedia.org/wiki/The_Doors']
-# links_rock_artist = ['https://en.wikipedia.org/wiki/Santana_(band)']
-# links_rock_artist = ['https://en.wikipedia.org/wiki/MC5']
-# rock_artist_genre = ['acid_rock']
-
-
-###############################################################################    
-
-# list_wiki_labels_test = []
-# list_wiki_data_test = []
-
-# condition_htlm_list = "(len(j.find_all('div', attrs={'class':'hlist'}))>0)==True \
-#                       or \
-#                       (len(j.find_all('div', attrs={'class':'plainlist'}))>0)==True"
-
-# condition_html_ul_wo_list = "(((len(j.find_all('div', attrs={'class':'hlist'}))>0)==False \
-#                                 and (len(j.find_all('div', attrs={'class':'plainlist'}))>0)==False) \
-#                                 and (len(j.find_all('ul'))>0)==True)"
-
-# condition_html_br = "(len(j.find_all('br'))>0)==True"
-    
-    
-# for i, j in zip(labels,data):
-    
-#     if eval(condition_htlm_list) or eval(condition_html_ul_wo_list):
-#         for k in j.find_all('li'):
-#             list_wiki_labels_test.append(i.text.strip())
-#             list_wiki_data_test.append(k.text.strip())
-    
-#     elif eval(condition_html_br):
-#         for l in j:
-#             if len(l.text)>0:
-#                 list_wiki_labels_test.append(i.text)
-#                 list_wiki_data_test.append(l.text)
-    
-#     else:
-#         list_wiki_labels_test.append(i.text.strip())
-#         list_wiki_data_test.append(j.text.strip())
-                
-            
-# test = pd.DataFrame(zip(list_wiki_labels_test, list_wiki_data_test))
-
-
-
-###############################################################################    
-
-    
-
-# df_temp = pd.DataFrame({"RockArtist": list_wiki_rock_artist, "Genre": list_wiki_rock_artist_genre, \
-#                     "Label": list_wiki_labels, "Description": list_wiki_data, \
-#                     "FullPk": [i.replace(" ", "")+j.replace(" ", "")+k.replace(" ", "") \
-#                                for i,j,k in zip(list_wiki_rock_artist,list_wiki_labels,list_wiki_data)]})    
-    
-
-# folder=r'C:\Users\z004bswd\Desktop\Python_IB\RockNews_WebScraping\RockArtistMasterdata_WebScraping_csvSupportFiles'
-# df_rock.to_csv(folder+'\\RockArtistsList.csv', header=True, index=False, encoding='utf-8',sep=';')
-
-#################################################################################################################################################################
-

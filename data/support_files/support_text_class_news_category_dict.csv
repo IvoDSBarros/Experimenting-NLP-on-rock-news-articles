@@ -1,0 +1,79 @@
+bool_type;keyword;sub_category;category
+all;album;album announcement;album
+all;announce;album announcement;album
+all;album;album release;album
+all;release;album release;album
+all;album;album review;album
+all;review;album review;album
+all;play;artist performance;artist career facts
+all;watch;artist performance;artist career facts
+all;reunion;artist reunion;artist career facts
+all;play;artist show;show
+all;show;artist show;show
+all;bassist;bassist specific;artist career facts
+all;drummer;drummer specific;artist career facts
+all;announce;festival announcement;music festival
+all;festival;festival announcement;music festival
+all;guitarist;guitarrist specific;artist career facts
+all;album;new album;album
+all;new;new album;album
+all;new;new single;single
+all;single;new single;single
+all;new;new song;song
+all;song;new song;song
+all;new;new tour;tour
+all;tour;new tour;tour
+all;new;new video;video
+all;video;new video;video
+all;announce;show announcement;show
+all;show;show announcement;show
+all;announce;single announcement;single
+all;single;single announcement;single
+all;release;single release;single
+all;single;single release;single
+all;release;song release;song
+all;song;song release;song
+all;announce;song  announcement;song
+all;song;song  announcement;song
+all;announce;tour announcement;tour
+all;tour;tour announcement;tour
+all;date;tour dates;tour
+all;tour;tour dates;tour
+all;reschedule;tour reschedule;tour
+all;tour;tour reschedule;tour
+all;announce;video announcement;video
+all;video;video announcement;video
+all;release;video release;video
+all;video;video release;video
+all;album;album related;album
+all;tour;tour related;tour
+all;single;single related;single
+all;release;musical release related;general release
+all;announce;musical announcement related;general announcement
+all;tribute;tribute related;musical tribute
+all;song;song related;song
+all;show;show related;show
+all;cover;album cover art;album
+all;art;album cover art;album
+all;cover;album cover;album
+all;album;album cover;album
+all;cover;artist cover;artist career facts
+all;setlist;setlist;setlist
+all;rrhof;music awards;music awards
+all;birthday;birthday related;artist career extraneous facts
+all;lineup;rock artist lineup related;artist career facts
+all;festival;music festival;music festival
+all;death;death related;death related
+any;movie;movie related;movie
+any;trailer;movie related;movie
+any;grammy;music awards;music awards
+any;award;music awards;music awards
+any;perform;artist live performance;artist career facts
+any;performance;artist live performance;artist career facts
+any;play;artist live performance;artist career facts
+any;singer;singer specific;artist career facts
+any;vocalist;singer specific;artist career facts
+any;drug;drug use related;artist career extraneous facts
+any;rehab;drug use related;artist career extraneous facts
+any;video;video related;video
+any;watch;video related;video

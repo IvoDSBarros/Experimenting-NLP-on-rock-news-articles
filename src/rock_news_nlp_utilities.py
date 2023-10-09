@@ -12,8 +12,8 @@ import os
 import os.path
 
 path_parent_dir = os.path.dirname(os.getcwd())
-path_data_web_scrapers = f'{path_parent_dir}\data\web_scrapers'
-path_data_data_subsets = f'{path_parent_dir}\data\data_subsets'
+path_data_web_scrapers = f'{path_parent_dir}\\data\\web_scrapers'
+path_data_data_subsets = f'{path_parent_dir}\\data\\data_subsets'
 
 def return_empty_list_from_nan(df,df_column_list):
     """

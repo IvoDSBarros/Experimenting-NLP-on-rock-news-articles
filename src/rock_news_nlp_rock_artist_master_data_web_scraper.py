@@ -100,12 +100,12 @@ def extract_wiki_artist_infobox_attributes(links_rock_artist, rock_artist_genre)
                             if len(n.text)>0:
                                 web_data['rock_artist'].append(artist_name)
                                 web_data['genre'].append(j)
-                                web_data['label'].append(k.text.strip())
+                                web_data['label'].append(k.text)
                                 web_data['description'].append(n.text)           
                     else:
                         web_data['rock_artist'].append(artist_name)
                         web_data['genre'].append(j)
-                        web_data['label'].append(k.text.strip())
+                        web_data['label'].append(k.text)
                         web_data['description'].append(l.text.strip())
                 
             except:

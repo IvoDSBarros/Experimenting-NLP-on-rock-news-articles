@@ -1,6 +1,6 @@
 # Rock is not dead: NLP experiments on rock news articles
 # Overview
-This repository contains multiple NLP experiments on web rock-based news articles. The text corpus is comprised by 20K rock news headlines and descriptions with unlabelled data (for demonstration purposes, a random subset of 2K articles is available in this repository). The data was retrieved between January 2022 and September 2023 from 6 specialized rock websites: Loudersound, loudwire, Ultimate Classic Rock, Kerrang!, Planet Rock and The New York Times.
+This repository contains multiple NLP experiments on web rock-based news articles. The text corpus is comprised by 20K rock news headlines and descriptions with unlabelled data (for demonstration purposes, a random subset of 1K articles is available in this repository). The data was retrieved between January 2022 and September 2023 from 6 specialized rock websites: Loudersound, loudwire, Ultimate Classic Rock, Kerrang!, Planet Rock and The New York Times.
 
 <details>
 <summary> Table of Contents </summary>
@@ -23,7 +23,7 @@ This repository contains multiple NLP experiments on web rock-based news article
 
 ## Dictionary-based Named Entity Recognition
 ### Goals
-The purpose of this model is identifying and extracting rock artist/rock artist member names from the headlines and descriptions of the above-mentioned text corpus. A custom dictionary-based named entity recognition (NER) approach is tested. The pre-built dictionary is based on data extracted from Wikipedia lists on rock, metal and punk bands gathered by a web scraper (the rock artist master data available in this repository is restricted to artists starting with letters from "A" to "D").
+The purpose of this model is identifying and extracting rock artist/rock artist member names from the headlines and descriptions of the above-mentioned text corpus. A custom dictionary-based named entity recognition (NER) approach is tested. The pre-built dictionary is based on data extracted from Wikipedia lists on rock, metal and punk bands gathered by a web scraper (the rock artist master data available in this repository is restricted to artists starting with the letter "A").
 
 ### Challenges
 + Single/multiple rock artist name(s) and/or single/multiple rock artist member name(s) might be mentioned in a news headline and/or news description. Hence, the text of the headline and the text of the description were combined to perform the search of the rock artist and the rock artist member. Additionally, only whole/compound words are matched to avoid inaccurate labelling. The pre-built dictionaries of rock artists/artists member names contain 38,663 records. Given the ultimate purpose is assigning lists of identified rock artist/artist member names per every single text of the corpus, performance is a critical issue. Several methods were assessed including Vectorization, Flashtext, Regex and a whole word search approach proposed on Stack Overflow (question 5319922, user200783). The latter, in conjunction with a text preprocessing approach which removes special characters and a set of rock artists/artists member names, demonstrated to be the fastest and most effective.

@@ -148,4 +148,4 @@ links_subgenres = [i for i in links_subgenres if "acid" in i]
 links_rock_artist, rock_artist_genre = get_rock_artist_links(links_subgenres)
 wiki_list_acid_rock_artist = extract_wiki_artist_infobox_attributes(links_rock_artist, rock_artist_genre)
 # wiki_list_acid_rock_artist.to_csv(f'{path_data_web_scrapers}/wiki_list_acid_rock_artist.csv', header=True, index=False, encoding='utf-8',sep=';')
-print("...it has been sucessfully executed in %0.1fs." % (time() - t_start))
+print("...it has been successfully executed in %0.1fs." % (time() - t_start))

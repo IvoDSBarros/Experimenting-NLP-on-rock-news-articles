@@ -117,4 +117,4 @@ df_rock_news_category_tags = df_category_tags_prep.drop('title', axis=1)
 #==============================================================================
 
 df_rock_news_category_tags.to_csv(f'{path_output_csv}/rock_news_nlp_rock_news_category_tags.csv', header=True, index=False, encoding='utf-8',sep=';')
-print("...it has been completed sucessfully in %0.1fs." % (time() - t_start))
+print("...it has been sucessfully executed in %0.1fs." % (time() - t_start))

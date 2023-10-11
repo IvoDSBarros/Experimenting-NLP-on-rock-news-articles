@@ -36,4 +36,4 @@ lda_sklearn_test_subset_output.to_csv(f'{path_output_csv}/rock_news_nlp_lda_skle
 model_perplexity = lda_model.perplexity(word_freq_count_pred)
 log_likelihood_score = lda_model.score(word_freq_count_pred)
 utils_tpp.print_lda_model_topics_stats(dict_topics,model_perplexity,log_likelihood_score)
-print("...it has been sucessfully executed in %0.1fs." % (time() - t_start))
+print("...it has been successfully executed in %0.1fs." % (time() - t_start))

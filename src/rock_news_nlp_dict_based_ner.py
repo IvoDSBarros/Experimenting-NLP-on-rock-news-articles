@@ -139,4 +139,4 @@ identified_rock_artists_temp = list(set([i for i in identified_rock_artists_temp
 identified_rock_artists_temp = [tpp.remove_punctuation(i.lower()) for i in identified_rock_artists_temp]
 identified_rock_artists = pd.DataFrame(identified_rock_artists_temp).rename(columns={0: "rock_artist"})
 identified_rock_artists.to_csv(f'{path_data_support_files}/support_identified_rock_artists.csv', header=True, index=False, encoding='utf-8',sep=';')
-print("...it has been completed sucessfully in %0.1fs." % (time() - t_start))
+print("...it has been sucessfully executed in %0.1fs." % (time() - t_start))

@@ -40,4 +40,4 @@ lda_gensim_test_subset_output.to_csv(f'{path_output_csv}/rock_news_nlp_lda_gensi
 test_model_perplexity = lda_gens.metric_perplexity(ens_lda_train, corpus)
 test_coherence_score = lda_gens.metric_coherence(model=ens_lda_train, texts=text_corpus_clean, dictionary=dictionary_train, coherence='u_mass')
 utils_tpp.print_lda_model_topics_stats(dict_ens_lda_top_5_words,test_model_perplexity,test_coherence_score )
-print("...it has been sucessfully executed in %0.1fs." % (time() - t_start))
+print("...it has been successfully executed in %0.1fs." % (time() - t_start))

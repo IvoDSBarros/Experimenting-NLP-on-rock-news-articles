@@ -170,7 +170,7 @@ A UMass Coherence score and Perplexity were used to evaluate the Ensemble LDA mo
 <br>
 
 **Labelling accuracy of the topic "album announcement"**
-![](https://github.com/IvoDSBarros/Rock-is-not-dead_NLP-experiments-on-rock-news-articles/blob/82df807f30f3457e40a81a3484924fe7fcf55661/output/visuals/lda_gensim_labelling_accuracy_album.png)
+![]()
 
 <div align = "right">    
   <a href="#overview">(back to top)</a>

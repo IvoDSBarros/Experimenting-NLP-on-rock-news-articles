@@ -74,8 +74,7 @@ def load_text_corpus(file_path,file_name,sep,converter,col_name):
     Returns:
         DataFrame
     """
-    df_temp = pd.read_csv(f'{file_path}/{file_name}',sep=sep,converters=converter)
-    df_temp = df_temp.loc[:, [col_name]]
+    df_temp = pd.read_csv(f'{file_path}/{file_name}',sep=sep,converters=converter,usecols=[col_name])
     return df_temp[col_name].to_list()
 
 def save_py_object(py_object, path, py_object_file_name):

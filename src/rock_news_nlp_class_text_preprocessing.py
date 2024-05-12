@@ -19,11 +19,12 @@ import os.path
 
 global df_unique_rock_artists, df_dict_category, df_add_keywords
 
-path_parent_dir = os.path.dirname(os.getcwd())
-path_data_support_files = f'{path_parent_dir}\data\support_files'
-df_unique_rock_artists = pd.read_csv(f'{path_data_support_files}/support_identified_rock_artists.csv',sep=';')
-df_dict_category = pd.read_csv(f'{path_data_support_files}/support_text_class_news_category_dict.csv',sep=';')
-df_add_keywords = pd.read_csv(f'{path_data_support_files}/support_text_class_news_category_add_keywords.csv',sep=';')
+path_parent_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+path_data_support_files = os.path.join(path_parent_dir, 'data', 'support_files')
+
+df_unique_rock_artists = pd.read_csv(f'{path_data_support_files}\\support_identified_rock_artists.csv', sep=';')
+df_dict_category = pd.read_csv(f'{path_data_support_files}\\support_text_class_news_category_dict.csv',sep=';')
+df_add_keywords = pd.read_csv(f'{path_data_support_files}\\support_text_class_news_category_add_keywords.csv',sep=';')
 
 class text_preprocessing:     
     stop_words = set(stopwords.words('english'))
@@ -266,4 +267,29 @@ class text_preprocessing:
         lst_txt_temp = [text_preprocessing.get_noun_verb(i, text_preprocessing.set_keyword) for i in lst_txt_temp]
         lst_txt_temp = [text_preprocessing.stem_word(i) for i in lst_txt_temp]
         lst_txt = [text_preprocessing.replace_keywords(' '.join(i), text_preprocessing.dict_keyword) for i in lst_txt_temp]
-        return lst_txt 
+        return lst_txt
+
+    def text_preprocessing_multi_label_class(lst):
+        """
+        To execute the essential text preprocessing techniques for a multilabel classification task    
+        
+        Args:
+            lst : list         
+    		
+    	Returns:
+    	    list
+        """
+        set_target_keyword = set(df_dict_category['keyword'])
+                
+        lst_txt_temp = [i.lower() for i in lst]
+        lst_txt_temp = [re.sub("’", "'", i) for i in lst_txt_temp]
+        lst_txt_temp = [text_preprocessing.replace_keywords(i,text_preprocessing.dict_synonym_replacement) for i in lst_txt_temp]
+        lst_txt_temp = [text_preprocessing.remove_punctuation(i) for i in lst_txt_temp]
+        lst_txt_temp = [text_preprocessing.remove_keywords(i,'Bandname',text_preprocessing.set_rock_artist_name) for i in lst_txt_temp]
+        lst_txt_temp = [text_preprocessing.remove_stopwords(i,text_preprocessing.additional_stop_words) for i in lst_txt_temp]
+        lst_txt_temp = [text_preprocessing.token(i) for i in lst_txt_temp]   
+        lst_txt_temp = [text_preprocessing.get_noun_verb(i, set_target_keyword) for i in lst_txt_temp]   
+        lst_txt_temp = [text_preprocessing.stem_word(i) for i in lst_txt_temp]
+        lst_txt_temp = [text_preprocessing.replace_keywords(' '.join(i), text_preprocessing.dict_keyword) for i in lst_txt_temp]
+        lst_txt = ['no words after text preprocessing' if bool(i)==False else i for i in lst_txt_temp]
+        return lst_txt
